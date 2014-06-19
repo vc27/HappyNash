@@ -908,48 +908,50 @@ a.read_more { text-decoration: underline; font-style: italic; display: block; }
 /* line 278, ../sass/default.scss */
 body.landing-page #page { background: url("../images/bg-landing-page.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 /* line 282, ../sass/default.scss */
-body.landing-page .head { padding-top: 30px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+body.landing-page #page-cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); }
 /* line 283, ../sass/default.scss */
+body.landing-page .head { padding-top: 30px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 284, ../sass/default.scss */
 body.landing-page .body { padding: 30px 0; }
-/* line 286, ../sass/default.scss */
-body.landing-page .foot { font-size: 12px; padding: 15px 0; text-align: center; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
 /* line 287, ../sass/default.scss */
+body.landing-page .foot { font-size: 12px; padding: 15px 0; text-align: center; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 288, ../sass/default.scss */
 body.landing-page .form-wrap { width: 300px; margin: 0 auto; }
-/* line 289, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
 /* line 290, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 291, ../sass/default.scss */
 body.landing-page .form-wrap .gform_confirmation_message { padding: 7.5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.8); text-align: center; }
-/* line 292, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .ginput_container { padding: 7.5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.4); }
 /* line 293, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .ginput_container { padding: 7.5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.4); }
+/* line 294, ../sass/default.scss */
 body.landing-page .form-wrap .gfield input[type="email"] { font-size: 16px; text-indent: 7px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 297, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_radio input { margin-left: 7.5px; position: relative; top: -1px; left: -1px; }
 /* line 298, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .gfield_radio input { margin-left: 7.5px; position: relative; top: -1px; left: -1px; }
+/* line 299, ../sass/default.scss */
 body.landing-page .form-wrap .gfield .gfield_radio label { cursor: pointer; }
-/* line 301, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
 /* line 302, ../sass/default.scss */
-body.landing-page .form-wrap .gfield_error { background: none !important; }
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
 /* line 303, ../sass/default.scss */
+body.landing-page .form-wrap .gfield_error { background: none !important; }
+/* line 304, ../sass/default.scss */
 body.landing-page .form-wrap .gform_anchor, body.landing-page .form-wrap .validation_error, body.landing-page .form-wrap .validation_message, body.landing-page .form-wrap .gfield_required { display: none; }
-/* line 307, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
 /* line 308, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
+/* line 309, ../sass/default.scss */
 body.landing-page .form-wrap .gform_footer { display: block; width: 180px; padding: 3.75px 7.5px; margin-left: auto; margin-right: auto; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.4); }
-/* line 310, ../sass/default.scss */
+/* line 311, ../sass/default.scss */
 body.landing-page .form-wrap .gform_footer input[type="submit"] { display: block; width: 100%; text-align: center; background: #fff; font-size: 16px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 315, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
 /* line 316, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
+/* line 317, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_1 { margin-bottom: 15px; }
-/* line 318, ../sass/default.scss */
+/* line 319, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_1 label { display: none; }
-/* line 320, ../sass/default.scss */
+/* line 321, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 { margin: 0 auto 15px !important; }
-/* line 322, ../sass/default.scss */
-body.landing-page .form-wrap #field_1_2 label:first-child { font-style: italic; font-size: 12px; }
 /* line 323, ../sass/default.scss */
+body.landing-page .form-wrap #field_1_2 label:first-child { font-style: italic; font-size: 12px; }
+/* line 324, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 .ginput_container { background: rgba(255, 255, 255, 0.8); }
 
 /*Responsive*/

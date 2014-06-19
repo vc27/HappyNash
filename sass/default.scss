@@ -279,6 +279,7 @@ body.landing-page {
 		background:url('../images/bg-landing-page.jpg') no-repeat center center; 
 		-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
 	}
+	#page-cover { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.1); }
 	.head { padding-top:($p*2); color:#fff; text-shadow: 0 2px 1px rgba(0,0,0,0.5); }
 	.body { 
 		padding:($p*2) 0;

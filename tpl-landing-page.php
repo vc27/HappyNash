@@ -18,6 +18,7 @@ get_template_part( 'header-head' );
 <body <?php body_class('landing-page'); ?>>
 	<?php do_action('after_body_tag'); ?>
 	<div id="page">
+		<div id="page-cover"></div>
 		<div class="head">
 			<h1 class="custom-text">HappyNash</h1>
 			<p>
