@@ -15,10 +15,12 @@
 	</div><!-- End content-wrap -->
 	
 	<!-- Start Footer -->
-	<div id="footer" class="outer-wrap">
+	<div id="footer" class="outer-wrap" style="background-image:url('<?php the_field('_footer_image','option'); ?>');">
+		<div class="section-head">
+			<div class="custom-h2"><?php the_field('_footer_title','option'); ?></div>
+		</div>
 		<footer class="inner-wrap">
 			<?php 
-			
 			wp_nav_menu( array( 
 				'depth' => 1, 
 				'fallback_cb' => '', 
@@ -26,8 +28,8 @@
 				'container' => 'div', 
 				'container_id' => 'footer-navigation' 
 			) );
-			
 			?>
+			<p id="copyright">&copy; <?php echo date('Y'); ?> HappyNash</p>
 			<div class="clear"></div>
 		</footer>
 	</div><!-- End Footer -->

@@ -248,7 +248,8 @@ class ChildTheme_VC {
 	function register_style_and_scripts() {
 		global $is_IE;
 		
-		wp_register_style( 'google-fonts', "http://fonts.googleapis.com/css?family=Allura|Open+Sans:400italic,700italic,400,700", array(), null );
+		wp_register_style( 'google-fonts', "http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Allura|Open+Sans:400italic,700italic,400,700", array(), null );
+		wp_register_style( 'icomoon', "$this->stylesheet_directory_uri/css/icomoon/style.css", array(), null );
 		wp_register_style( 'childtheme-default', "$this->stylesheet_directory_uri/css/default.css", array(), null );
 		wp_register_script( 'childTheme', "$this->stylesheet_directory_uri/js/min/childTheme-min.js", array('jquery'), null );
 		
@@ -332,6 +333,7 @@ class ChildTheme_VC {
 	function wp_print_styles() {
 		
 		wp_enqueue_style( 'google-fonts' );
+		wp_enqueue_style( 'icomoon' );
 		wp_enqueue_style( 'childtheme-default' );
 		global $is_IE, $wp_styles;
 		if ( $is_IE OR $this->is_IE ) {

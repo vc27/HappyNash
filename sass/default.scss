@@ -6,32 +6,55 @@ Package ParentTheme
 License GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #################################################################################################### */
 
+/*Font: https://www.google.com/fonts#UsePlace:use/Collection:Lora|Allura|Open+Sans:400italic,700italic,400,700*/
+
 /* Padding */
 $p: 15px;
 $radius: 4px;
 
 /* Paragraph */
-$font-paragraph: sans-serif;
-$font-paragraph-size: 16px;
+$font-paragraph: 'Open Sans', sans-serif;
+$font-paragraph-size: 15px;
 $font-paragraph-line-height: 26px;
 
-$font-sml: 16px;
-$font-cusom: 'Allura', cursive;
-
 /* Title */
-$font-title: sans-serif;
+$font-title: 'Lora', serif;
 $font-title-weight: 400; 
 $font-title-line-height: 1.1em;
+
+/*Custom*/
+$font-cusom: 'Allura', cursive;
+$font-size-sml: 16px;
 
 /* Block */
 $max-width-a: 940px;
 
 /*Colors*/
-$color-error: red;
-$color-gray: #eee;
+$c-error: red;
 
-$border-color-a: #aaa;
-$border-color-b: #666;
+/*Gray*/
+$c-gray-light: #fafafa;
+$c-gray: #adadad;
+$c-gray-drk: #a3a3a3;
+
+/*Brown*/
+$c-brown: #5d4634;
+
+/*Green*/
+$c-green-light: #9faf25;
+$c-green: #7a861d;
+
+/*Yellow*/
+$c-yellow-light: #fef1be;
+$c-yellow: #fbd029;
+
+/*Pink*/
+$c-pink-light: #fbf5ed;
+$c-pink: #f2ddc4;
+
+/*Red*/
+$c-red-light: #f5cdca;
+$c-red: #dd5951;
 
 /*mixin*/
 @mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; -ms-border-radius: $radius; border-radius: $radius; }
@@ -60,18 +83,28 @@ body { line-height:$font-paragraph-line-height; font-family:$font-paragraph; }
 .outer-wrap { position:relative; }
 .inner-wrap { max-width:$max-width-a; padding-left:$p; padding-right:$p; position:relative; margin:0 auto; text-align:left; }
 
-a, a:visited { text-decoration:none; }
+a, a:visited { color:$c-red; text-decoration:none; }
 
+.custom-h1, .custom-h2,
 .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
 	font-family:$font-title; font-weight:$font-title-weight; display:block; line-height:$font-title-line-height; 
 	padding-bottom:$p; padding-top:($p/2);
 }
-.h1, h1 { font-size:50px; }
-.h2, h2 { font-size:44px; }
-.h3, h3 { font-size:38px; }
-.h4, h4 { font-size:34px; }
-.h5, h5 { font-size:30px; }
-.h6, h6 { font-size:25px; }
+.custom-h1 { font-size:60px; font-family:$font-cusom; font-weight:400; }
+.custom-h2 { font-size:40px; font-family:$font-cusom; font-weight:400; }
+
+.h1, h1 { font-size:30px; }
+.h2, h2 { font-size:20px; }
+.h3, h3 { font-size:18px; }
+.h4, h4 { font-size:15px; }
+.h5, h5 { font-size:15px; }
+.h6, h6 { font-size:15px; }
+
+
+
+.section-head {
+	background:rgba(0,0,0,0.3); color:#fff; padding:10px;
+}
 
 
 
@@ -85,11 +118,12 @@ input[type="text"],
 input[type="password"],
 input[type="email"] { 
 	font-size:$font-paragraph-size; font-family:$font-paragraph;
-	width:97%;
-	border:solid 1px $border-color-a; border-top-color:$border-color-b; padding:3px 1%;
+	width:95%; padding:6px 2%; color:$c-gray;
+	border:none; background:$c-gray-light; @include border-radius(4px);
 }
 textarea { height:100px; }
-label.error { color:$color-error; }
+label.error { color:$c-error; }
+label { cursor:pointer; }
 
 /* remove webkit css
 select, input, textarea { -webkit-appearance: none; }*/
@@ -104,6 +138,12 @@ input[type="text"]:hover,input[type="text"]:focus,
 input[type="password"]:hover,input[type="password"]:focus,
 input[type="email"]:hover,input[type="email"]:focus {}
 
+.entry .gform_wrapper,
+.gform_wrapper {
+	ul { list-style:none; margin:0; }
+	.gfield_label { font-weight:800; }
+}
+
 
 
 
@@ -112,9 +152,15 @@ input[type="email"]:hover,input[type="email"]:focus {}
 /* Buttons
 #################################################################################################### */
 .btn,
-input[type="submit"],input[type="button"] {
-	cursor:pointer; display:inline-block; padding:($p/2) ($p);
-	background:$color-gray; border:none; font-size:$font-paragraph-size; font-family:$font-paragraph;
+input[type="submit"],input[type="button"], button {
+	cursor:pointer; display:inline-block; padding:6px 20px;
+	background:none; border:solid 1px rgba(0,0,0,0.3); @include border-radius(4px); @include transition($transition);
+	color:$c-gray-drk; font-size:$font-paragraph-size; font-family:$font-paragraph; 
+}
+
+.btn:hover,
+input[type="submit"]:hover,input[type="button"]:hover, button:hover {
+	color:#000; 
 }
 
 
@@ -124,21 +170,6 @@ input[type="submit"],input[type="button"] {
 
 /* General Links
 #################################################################################################### */
-
-
-/* Main Navigation Links */
-#primary-navigation {
-	li { display:inline-block; }
-	a { display:inline-block; padding:0 ($p/2); margin:0 ($p/2); }
-	.current-menu-item a, a:hover {}
-}
-
-
-/* footer-navigation */
-#footer-navigation {
-	li { display:inline-block; }
-	a { display:inline-block; padding:0 ($p/2); margin:0 ($p/2); }
-}
 
 
 /* Navigation */
@@ -183,7 +214,7 @@ input[type="submit"],input[type="button"] {
 
 /* Entry - Excerpt */
 #loop-default {
-	.entry { clear:both; }
+	.entry { clear:both; color:$c-brown; }
 	.excerpt { clear:none; padding:0; }
 }
 
@@ -257,6 +288,10 @@ a.read_more { text-decoration:underline; font-style:italic; display:block; }
 	li { margin-bottom:10px; }
 	li li { margin:0; }
 	.widget-box {}
+	.h3 { 
+		color:$c-brown; 
+		a { color:$c-brown; }
+	}
 }
 
 
@@ -267,8 +302,33 @@ a.read_more { text-decoration:underline; font-style:italic; display:block; }
 /* Blocks
 #################################################################################################### */
 
-#header, #footer {
-	.inner-wrap { padding-top:$p; padding-bottom:$p; }
+#header {
+	height:250px; color:#fff; font-style:italic; text-shadow:0 1px 2px rgba(0,0,0,0.6);
+	@include background-cover(0); margin-bottom:75px;
+	.inner-wrap { padding-top:20px; text-align:center; }
+	a { color:#fff; }
+	.h2 { font-family:$font-paragraph; padding:0; }
+	#primary-navigation {
+		display:block; font-style:normal; text-shadow:none; text-align:center;
+		background:rgba(255,255,255,0.8);
+		li { display:inline-block; }
+		a { color:$c-green-light; line-height:40px; font-size:20px; display:inline-block; padding:0 20px; margin:0; }
+		.current-menu-item a, a:hover {
+			color:$c-green; background:#fff;
+		}
+	}
+}
+#footer {
+	@include background-cover(0);
+	.inner-wrap {
+		color:#fff; text-align:center; padding-bottom:115px;
+		#copyright { font-size:$font-size-sml; text-shadow:0 1px 2px rgba(0,0,0,0.7); }
+		#footer-navigation {
+			padding:35px 0 10px;
+			li { display:inline-block; }
+			a { color:#fff; display:inline-block; padding:0 10px; margin:0; text-shadow:0 1px 2px rgba(0,0,0,0.7); }
+		}
+	}
 }
 
 
@@ -302,7 +362,7 @@ body.landing-page {
 	}
 	.foot { 
 		width:100%;
-		font-size:$font-sml; padding:$p 0; text-align:center; color:#fff; 
+		font-size:$font-size-sml; padding:$p 0; text-align:center; color:#fff; 
 		text-shadow: 0 2px 1px rgba(0,0,0,0.5);
 	} 
 	.form-wrap {
@@ -341,7 +401,7 @@ body.landing-page {
 		}
 		#field_1_2 { 
 			margin:0 auto $p !important;
-			label:first-child { font-style:italic; font-size:$font-sml; }
+			label:first-child { font-style:italic; font-size:$font-size-sml; }
 			.ginput_container { background:rgba(255,255,255,0.8); }
 		}
 	}

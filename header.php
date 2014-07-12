@@ -18,19 +18,19 @@ get_template_part( 'header-head' );
 	<div id="page">
 			
 		<!-- Start Header -->
-		<div id="header" class="outer-wrap">
+		<div id="header" class="outer-wrap" style="background-image:url('<?php echo get_field('_header_image','option'); ?>');">
+			<?php 
+			wp_nav_menu( array( 
+				'fallback_cb' => '', 
+				'theme_location' => 'primary-navigation', 
+				'container' => 'div', 
+				'container_id' => 'primary-navigation', 
+			) );
+			?>
 			<header class="inner-wrap">
-				<?php 
-				
-				wp_nav_menu( array( 
-					'fallback_cb' => '', 
-					'theme_location' => 'primary-navigation', 
-					'container' => 'div', 
-					'container_id' => 'primary-navigation', 
-					'menu_class' => 'sf-menu' 
-				) );
-				
-				?>
+				<div class="custom-h1"><?php echo get_field('_header_title','option'); ?></div>
+				<div class="h2"><?php echo get_field('_header_sub_title','option'); ?></div>
+				<p><em><?php echo get_field('_header_sub_title_sub_text','option'); ?></em></p>
 				<div class="clear"></div>
 			</header>
 		</div>
