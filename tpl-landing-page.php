@@ -17,12 +17,12 @@ get_template_part( 'header-head' );
 <!-- Start Body -->
 <body <?php body_class('landing-page'); ?>>
 	<?php do_action('after_body_tag'); ?>
+	<div id="page-cover"></div>
 	<div id="page">
-		<div id="page-cover"></div>
 		<div class="head">
 			<h1 class="custom-text">HappyNash</h1>
 			<p>
-				<span class="h5">Live healthy, live happy together.</span>
+				<span class="h5">Live, Love, Nashville</span>
 				<span class="h6 meta-data">Nashville, TN</span>
 			</p>
 		</div>

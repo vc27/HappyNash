@@ -14,15 +14,15 @@ $radius: 4px;
 
 /* Paragraph */
 $font-paragraph: 'Open Sans', sans-serif;
-$font-paragraph-size: 16px;
-$font-paragraph-line-height: 26px;
+$font-paragraph-size: 20px;
+$font-sml: 16px;
+$font-paragraph-line-height: 30px;
 
 /* Title */
 $font-title: 'Open Sans', sans-serif;
 $font-title-weight: 400; 
 $font-title-line-height: 1.1em;
 
-$font-sml: 12px;
 $font-cusom: 'Allura', cursive;
 
 /* Block */
@@ -38,8 +38,11 @@ $border-color-b: #666;
 /*mixin*/
 @mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; -ms-border-radius: $radius; border-radius: $radius; }
 @mixin box-shadow($shadow) { box-shadow:$shadow; -moz-box-shadow:$shadow; -webkit-box-shadow:$shadow; -o-box-shadow:$shadow; }
-@mixin filter-blur($filter) { filter:blur($filter); -webkit-filter:blur($filter); -moz-filter:blur($filter);-o-filter: blur(5px);-ms-filter:blur($filter); }
+@mixin filter-blur($filter) { filter:blur($filter); -webkit-filter:blur($filter); -moz-filter:blur($filter);-o-filter: blur($filter);-ms-filter:blur($filter); }
 @mixin transition($transition) { -webkit-transition:$transition; -moz-transition:$transition; -o-transition:$transition; transition:$transition; }
+@mixin background-cover($cover) { background-attachment:fixed; background-position:center center; background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+@mixin translateY($translateY) { -webkit-transform: translateY($translateY); -moz-transform: translateY($translateY); -o-transform: translateY($translateY); -ms-transform: translateY($translateY); transform: translateY($translateY); }
+@mixin box-sizing($boxSizing) { box-sizing:content-box; -ms-box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; }
 $transition: all 0.1s ease-in;
 
 
@@ -48,7 +51,6 @@ $transition: all 0.1s ease-in;
 @import 'bootstrap-responsive';
 
 
-html { height:100%; }
 body { line-height:$font-paragraph-line-height; font-family:$font-paragraph; height:100%; }
 #page { position:relative; font-size:$font-paragraph-size; height:100%; }
 .outer-wrap { position:relative; height:100%; }
@@ -274,29 +276,47 @@ a.read_more { text-decoration:underline; font-style:italic; display:block; }
 
 /* body.landing-page
 #################################################################################################### */
-body.landing-page {
-	#page { 
-		background:url('../images/bg-landing-page.jpg') no-repeat center center; 
-		-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+html { height:100%; }
+body.landing-page { 
+	background-image:url('../images/bg-landing-page.jpg');  @include background-cover(0);
+	#page-cover { 
+		position:fixed; top:0; left:0; width:100%; height:100%; 
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, rgba(0,0,0,0.1)),
+			color-stop(1, rgba(0,0,0,0.3))
+		);
+		background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+		background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+		background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+		background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
 	}
-	#page-cover { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.1); }
+	#page { position:relative; z-index:2; }
 	.head { padding-top:($p*2); color:#fff; text-shadow: 0 2px 1px rgba(0,0,0,0.5); }
 	.body { 
 		padding:($p*2) 0;
 	}
-	.foot { font-size:$font-sml; padding:$p 0; text-align:center; color:#fff; text-shadow: 0 2px 1px rgba(0,0,0,0.5); }
+	.foot { 
+		width:100%;
+		font-size:$font-sml; padding:$p 0; text-align:center; color:#fff; 
+		text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+	} 
 	.form-wrap {
 		width:300px; margin:0 auto;
 		.gform_wrapper .top_label .gfield_label { text-align:center; display:block; font-weight:400; color:#fff; text-shadow: 0 2px 1px rgba(0,0,0,0.5); }
 		.gform_confirmation_message { padding:($p/2); @include border-radius($radius); background:rgba(255,255,255,0.8); text-align:center; }
 		.gfield {
-			.ginput_container { padding:($p/2); @include border-radius($radius); background:rgba(255,255,255,0.4); }
+			.ginput_container { padding:($p/2); @include border-radius($radius); background:rgba(0,0,0,0.4); color:#fff; }
+			.gfield_label { margin-left:10px; margin-right:10px; margin-bottom:10px; }
 			input[type="email"] {
 				font-size:$font-paragraph-size; text-indent:7px; border:none; @include border-radius($radius);
 			}
-			.gfield_radio {
-				input { margin-left:($p/2); position:relative; top:-1px; left:-1px; }
-				label { cursor:pointer; }
+			.gfield_checkbox {
+				input { margin-left:($p/2); position:relative; top:-2px; }
+				label { cursor:pointer; padding-left:6px; }
 			}
 		}
 		.gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left:0; }
@@ -307,7 +327,7 @@ body.landing-page {
 		.gfield_required { display:none; }
 		.gform_wrapper li.gfield.gfield_error { border:none !important; }
 		.gform_footer {
-			display:block; width:180px; padding:($p/4) ($p/2); margin-left:auto; margin-right:auto; @include border-radius($radius); background:rgba(255,255,255,0.4);
+			display:block; width:200px; padding:($p/4) ($p/2); margin-left:auto; margin-right:auto; @include border-radius($radius); background:rgba(255,255,255,0.4);
 			input[type="submit"] {
 				display:block; width:100%; text-align:center; background:#fff; font-size:$font-paragraph-size; border:none; @include border-radius($radius);
 			}
