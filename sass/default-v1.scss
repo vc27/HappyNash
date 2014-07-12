@@ -6,25 +6,27 @@ Package ParentTheme
 License GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #################################################################################################### */
 
+/*https://www.google.com/fonts#UsePlace:use/Collection:Allura|Open+Sans:400italic,700italic,400,700*/
+
 /* Padding */
 $p: 15px;
 $radius: 4px;
 
 /* Paragraph */
-$font-paragraph: sans-serif;
-$font-paragraph-size: 16px;
-$font-paragraph-line-height: 26px;
-
+$font-paragraph: 'Open Sans', sans-serif;
+$font-paragraph-size: 20px;
 $font-sml: 16px;
-$font-cusom: 'Allura', cursive;
+$font-paragraph-line-height: 30px;
 
 /* Title */
-$font-title: sans-serif;
+$font-title: 'Open Sans', sans-serif;
 $font-title-weight: 400; 
 $font-title-line-height: 1.1em;
 
+$font-cusom: 'Allura', cursive;
+
 /* Block */
-$max-width-a: 940px;
+$max-width-a: 568px;
 
 /*Colors*/
 $color-error: red;
@@ -35,43 +37,39 @@ $border-color-b: #666;
 
 /*mixin*/
 @mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; -ms-border-radius: $radius; border-radius: $radius; }
-@mixin border-radius-top-left($radius) { border-top-left-radius:$radius; -moz-border-radius-topleft:$radius; -webkit-border-top-left-radius:$radius; -o-border-top-left-radius:$radius; }
-@mixin border-radius-top-right($radius) { border-top-right-radius:$radius; -moz-border-radius-topright:$radius; -webkit-border-top-right-radius:$radius; -o-border-top-right-radius:$radius; }
-@mixin border-radius-bottom-right($radius) { border-bottom-right-radius:$radius; -moz-border-radius-bottomright:$radius; -webkit-border-bottom-right-radius:$radius; -o-border-bottom-right-radius:$radius; }
-@mixin border-radius-bottom-left($radius) { border-bottom-left-radius:$radius; -moz-border-radius-bottomleft:$radius; -webkit-border-bottom-left-radius:$radius; -o-border-bottom-left-radius:$radius; }
 @mixin box-shadow($shadow) { box-shadow:$shadow; -moz-box-shadow:$shadow; -webkit-box-shadow:$shadow; -o-box-shadow:$shadow; }
 @mixin filter-blur($filter) { filter:blur($filter); -webkit-filter:blur($filter); -moz-filter:blur($filter);-o-filter: blur($filter);-ms-filter:blur($filter); }
 @mixin transition($transition) { -webkit-transition:$transition; -moz-transition:$transition; -o-transition:$transition; transition:$transition; }
-@mixin transitionAll($time) { -webkit-transition:all $time ease-in; -moz-transition:all $time ease-in; -o-transition:all $time ease-in; transition:all $time ease-in; }
+@mixin background-cover($cover) { background-attachment:fixed; background-position:center center; background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 @mixin translateY($translateY) { -webkit-transform: translateY($translateY); -moz-transform: translateY($translateY); -o-transform: translateY($translateY); -ms-transform: translateY($translateY); transform: translateY($translateY); }
-@mixin translateX($translateX) { -webkit-transform: translateX($translateX); -moz-transform: translateX($translateX); -o-transform: translateX($translateX); -ms-transform: translateX($translateX); transform: translateX($translateX); }
-@mixin background-cover($cover) { background-position:center center; background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 @mixin box-sizing($boxSizing) { box-sizing:content-box; -ms-box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; }
-@mixin button-standard($button-standard) { background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #5880B5), color-stop(1, #3C6290) ); background-image: -o-linear-gradient(bottom, #5880B5 0%, #3C6290 100%); background-image: -moz-linear-gradient(bottom, #5880B5 0%, #3C6290 100%); background-image: -webkit-linear-gradient(bottom, #5880B5 0%, #3C6290 100%); background-image: -ms-linear-gradient(bottom, #5880B5 0%, #3C6290 100%); background-image: linear-gradient(to bottom, #5880B5 0%, #3C6290 100%); }
 $transition: all 0.1s ease-in;
+
 
 /* Reset */
 @import 'reset';
 @import 'bootstrap-responsive';
 
-html { height:100%; }
-body { line-height:$font-paragraph-line-height; font-family:$font-paragraph; }
+
+body { line-height:$font-paragraph-line-height; font-family:$font-paragraph; height:100%; }
 #page { position:relative; font-size:$font-paragraph-size; height:100%; }
-.outer-wrap { position:relative; }
+.outer-wrap { position:relative; height:100%; }
 .inner-wrap { max-width:$max-width-a; padding-left:$p; padding-right:$p; position:relative; margin:0 auto; text-align:left; }
 
 a, a:visited { text-decoration:none; }
 
+.custom-text,
 .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
 	font-family:$font-title; font-weight:$font-title-weight; display:block; line-height:$font-title-line-height; 
-	padding-bottom:$p; padding-top:($p/2);
+	padding-bottom:$p; padding-top:($p/2); letter-spacing:1px;
 }
-.h1, h1 { font-size:50px; }
+.custom-text { font-family:$font-cusom; }
+.h1, h1 { font-size:60px; }
 .h2, h2 { font-size:44px; }
 .h3, h3 { font-size:38px; }
 .h4, h4 { font-size:34px; }
-.h5, h5 { font-size:30px; }
-.h6, h6 { font-size:25px; }
+.h5, h5 { font-size:20px; padding-bottom:$p; padding-top:0; }
+.h6, h6 { font-size:15px; padding-bottom:$p; padding-top:0; }
 
 
 
@@ -252,7 +250,7 @@ a.read_more { text-decoration:underline; font-style:italic; display:block; }
 
 /* Widget Areas
 #################################################################################################### */
-.sidebar {
+.sidebar ul {
 	ul {}
 	li { margin-bottom:10px; }
 	li li { margin:0; }
@@ -278,6 +276,7 @@ a.read_more { text-decoration:underline; font-style:italic; display:block; }
 
 /* body.landing-page
 #################################################################################################### */
+html { height:100%; }
 body.landing-page { 
 	background-image:url('../images/bg-landing-page.jpg');  @include background-cover(0);
 	#page-cover { 
@@ -352,7 +351,5 @@ body.landing-page {
 
 
 
-/* Comments */
-@import 'comments';
 /*Responsive*/
 @import 'responsive';

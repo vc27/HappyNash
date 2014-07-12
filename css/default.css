@@ -5,7 +5,6 @@ Updated 03.14.14
 Package ParentTheme
 License GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #################################################################################################### */
-/*https://www.google.com/fonts#UsePlace:use/Collection:Allura|Open+Sans:400italic,700italic,400,700*/
 /* Padding */
 /* Paragraph */
 /* Title */
@@ -708,256 +707,315 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 10em; top: 
   .navbar-static .navbar-inner { padding-right: 10px; padding-left: 10px; } }
 @media (min-width: 980px) { /* line 1105, ../sass/bootstrap-responsive.scss */
   .nav-collapse.collapse { height: auto !important; overflow: visible !important; } }
-/* line 54, ../sass/default.scss */
-body { line-height: 30px; font-family: "Open Sans", sans-serif; height: 100%; }
-
-/* line 55, ../sass/default.scss */
-#page { position: relative; font-size: 20px; height: 100%; }
-
-/* line 56, ../sass/default.scss */
-.outer-wrap { position: relative; height: 100%; }
-
 /* line 57, ../sass/default.scss */
-.inner-wrap { max-width: 568px; padding-left: 15px; padding-right: 15px; position: relative; margin: 0 auto; text-align: left; }
+html { height: 100%; }
+
+/* line 58, ../sass/default.scss */
+body { line-height: 26px; font-family: sans-serif; }
 
 /* line 59, ../sass/default.scss */
-a, a:visited { text-decoration: none; }
+#page { position: relative; font-size: 16px; height: 100%; }
+
+/* line 60, ../sass/default.scss */
+.outer-wrap { position: relative; }
 
 /* line 61, ../sass/default.scss */
-.custom-text, .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 { font-family: "Open Sans", sans-serif; font-weight: 400; display: block; line-height: 1.1em; padding-bottom: 15px; padding-top: 7.5px; letter-spacing: 1px; }
+.inner-wrap { max-width: 940px; padding-left: 15px; padding-right: 15px; position: relative; margin: 0 auto; text-align: left; }
 
-/* line 66, ../sass/default.scss */
-.custom-text { font-family: "Allura", cursive; }
+/* line 63, ../sass/default.scss */
+a, a:visited { text-decoration: none; }
 
-/* line 67, ../sass/default.scss */
-.h1, h1 { font-size: 60px; }
-
-/* line 68, ../sass/default.scss */
-.h2, h2 { font-size: 44px; }
+/* line 65, ../sass/default.scss */
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 { font-family: sans-serif; font-weight: 400; display: block; line-height: 1.1em; padding-bottom: 15px; padding-top: 7.5px; }
 
 /* line 69, ../sass/default.scss */
-.h3, h3 { font-size: 38px; }
+.h1, h1 { font-size: 50px; }
 
 /* line 70, ../sass/default.scss */
-.h4, h4 { font-size: 34px; }
+.h2, h2 { font-size: 44px; }
 
 /* line 71, ../sass/default.scss */
-.h5, h5 { font-size: 20px; padding-bottom: 15px; padding-top: 0; }
+.h3, h3 { font-size: 38px; }
 
 /* line 72, ../sass/default.scss */
-.h6, h6 { font-size: 15px; padding-bottom: 15px; padding-top: 0; }
+.h4, h4 { font-size: 34px; }
+
+/* line 73, ../sass/default.scss */
+.h5, h5 { font-size: 30px; }
+
+/* line 74, ../sass/default.scss */
+.h6, h6 { font-size: 25px; }
 
 /* Forms
 #################################################################################################### */
-/* line 81, ../sass/default.scss */
-textarea, input[type="text"], input[type="password"], input[type="email"] { font-size: 20px; font-family: "Open Sans", sans-serif; width: 97%; border: solid 1px #aaaaaa; border-top-color: #666666; padding: 3px 1%; }
+/* line 83, ../sass/default.scss */
+textarea, input[type="text"], input[type="password"], input[type="email"] { font-size: 16px; font-family: sans-serif; width: 97%; border: solid 1px #aaaaaa; border-top-color: #666666; padding: 3px 1%; }
 
-/* line 89, ../sass/default.scss */
+/* line 91, ../sass/default.scss */
 textarea { height: 100px; }
 
-/* line 90, ../sass/default.scss */
+/* line 92, ../sass/default.scss */
 label.error { color: red; }
 
 /* remove webkit css
 select, input, textarea { -webkit-appearance: none; }*/
 /* Buttons
 #################################################################################################### */
-/* line 112, ../sass/default.scss */
-.btn, input[type="submit"], input[type="button"] { cursor: pointer; display: inline-block; padding: 7.5px 15px; background: #eeeeee; border: none; font-size: 20px; font-family: "Open Sans", sans-serif; }
+/* line 114, ../sass/default.scss */
+.btn, input[type="submit"], input[type="button"] { cursor: pointer; display: inline-block; padding: 7.5px 15px; background: #eeeeee; border: none; font-size: 16px; font-family: sans-serif; }
 
 /* General Links
 #################################################################################################### */
 /* Main Navigation Links */
-/* line 129, ../sass/default.scss */
+/* line 131, ../sass/default.scss */
 #primary-navigation li { display: inline-block; }
-/* line 130, ../sass/default.scss */
+/* line 132, ../sass/default.scss */
 #primary-navigation a { display: inline-block; padding: 0 7.5px; margin: 0 7.5px; }
 
 /* footer-navigation */
-/* line 137, ../sass/default.scss */
+/* line 139, ../sass/default.scss */
 #footer-navigation li { display: inline-block; }
-/* line 138, ../sass/default.scss */
+/* line 140, ../sass/default.scss */
 #footer-navigation a { display: inline-block; padding: 0 7.5px; margin: 0 7.5px; }
 
 /* Navigation */
-/* line 143, ../sass/default.scss */
-.navigation-post { display: block; clear: both; text-align: left; padding: 3.75px 7.5px; }
 /* line 145, ../sass/default.scss */
+.navigation-post { display: block; clear: both; text-align: left; padding: 3.75px 7.5px; }
+/* line 147, ../sass/default.scss */
 .navigation-post .prev-post { padding-left: 7.5px; }
-/* line 146, ../sass/default.scss */
+/* line 148, ../sass/default.scss */
 .navigation-post .next-post { padding-right: 7.5px; }
 
-/* line 150, ../sass/default.scss */
+/* line 152, ../sass/default.scss */
 .wp-pagenavi a, .wp-pagenavi span { padding: 3px 4px; margin: 3px; }
 
-/* line 153, ../sass/default.scss */
+/* line 155, ../sass/default.scss */
 #navigation-breadcrumb { font-weight: bold; padding-bottom: 3px; display: block; clear: both; }
 
-/* line 154, ../sass/default.scss */
+/* line 156, ../sass/default.scss */
 .navigation-posts { font-weight: bold; padding-bottom: 3px; display: block; clear: both; text-align: center; }
 
 /* Post, Page & General Loops
 #################################################################################################### */
-/* line 164, ../sass/default.scss */
+/* line 166, ../sass/default.scss */
 .hentry { position: relative; }
 
-/* line 165, ../sass/default.scss */
-#loop-default { padding-bottom: 60px; }
 /* line 167, ../sass/default.scss */
+#loop-default { padding-bottom: 60px; }
+/* line 169, ../sass/default.scss */
 #loop-default .hentry { padding: 60px 0 30px 0; }
-/* line 168, ../sass/default.scss */
+/* line 170, ../sass/default.scss */
 #loop-default .hentry:first-child { padding: 0 0 30px 0; }
 
 /* Meta Data */
-/* line 174, ../sass/default.scss */
+/* line 176, ../sass/default.scss */
 .meta-data { font-style: italic; padding-bottom: 15px; }
 
-/* line 176, ../sass/default.scss */
+/* line 178, ../sass/default.scss */
 .post-comments { padding: 0 15px 0 0; }
 
-/* line 177, ../sass/default.scss */
+/* line 179, ../sass/default.scss */
 .post-date { padding: 0 15px 0 0; }
 
-/* line 178, ../sass/default.scss */
+/* line 180, ../sass/default.scss */
 .read-more-dots { display: none; }
 
 /* Entry - Excerpt */
-/* line 184, ../sass/default.scss */
+/* line 186, ../sass/default.scss */
 #loop-default .entry { clear: both; }
-/* line 185, ../sass/default.scss */
+/* line 187, ../sass/default.scss */
 #loop-default .excerpt { clear: none; padding: 0; }
 
-/* line 188, ../sass/default.scss */
+/* line 190, ../sass/default.scss */
 a.read_more { text-decoration: underline; font-style: italic; display: block; }
 
-/* line 191, ../sass/default.scss */
-.entry .aligncenter { display: block; margin: 0 auto 15px; }
-/* line 192, ../sass/default.scss */
-.entry .alignnone { clear: both; float: none; }
 /* line 193, ../sass/default.scss */
-.entry .alignleft { margin-right: 15px; margin-bottom: 3px; }
+.entry .aligncenter { display: block; margin: 0 auto 15px; }
 /* line 194, ../sass/default.scss */
-.entry .alignright { margin-left: 15px; margin-bottom: 3px; }
+.entry .alignnone { clear: both; float: none; }
 /* line 195, ../sass/default.scss */
-.entry img { max-width: 100% !important; height: auto !important; }
+.entry .alignleft { margin-right: 15px; margin-bottom: 3px; }
 /* line 196, ../sass/default.scss */
-.entry img.wp-smiley { border: none; margin: 0; padding: 0; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+.entry .alignright { margin-left: 15px; margin-bottom: 3px; }
 /* line 197, ../sass/default.scss */
-.entry p { padding-bottom: 30px; }
+.entry img { max-width: 100% !important; height: auto !important; }
+/* line 198, ../sass/default.scss */
+.entry img.wp-smiley { border: none; margin: 0; padding: 0; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
 /* line 199, ../sass/default.scss */
-.entry blockquote p { padding: 0; margin: 15px 45px 22.5px 22.5px; }
+.entry p { padding-bottom: 30px; }
 /* line 201, ../sass/default.scss */
-.entry ol, .entry ul { margin: 15px 0 30px 20px; }
-/* line 202, ../sass/default.scss */
-.entry ul { list-style: disc; }
+.entry blockquote p { padding: 0; margin: 15px 45px 22.5px 22.5px; }
 /* line 203, ../sass/default.scss */
-.entry ol { list-style: decimal; }
+.entry ol, .entry ul { margin: 15px 0 30px 20px; }
 /* line 204, ../sass/default.scss */
-.entry li { padding-bottom: 7px; }
+.entry ul { list-style: disc; }
+/* line 205, ../sass/default.scss */
+.entry ol { list-style: decimal; }
 /* line 206, ../sass/default.scss */
+.entry li { padding-bottom: 7px; }
+/* line 208, ../sass/default.scss */
 .entry small { font-size: 11px; }
-/* line 207, ../sass/default.scss */
-.entry table { line-height: 18px; }
 /* line 209, ../sass/default.scss */
+.entry table { line-height: 18px; }
+/* line 211, ../sass/default.scss */
 .entry table td { padding-right: 7px; vertical-align: top; }
 
 /*end .entry */
-/* line 213, ../sass/default.scss */
+/* line 215, ../sass/default.scss */
 .excerpt p { padding-bottom: 30px; }
 
 /* Gallery Shortcode */
-/* line 219, ../sass/default.scss */
+/* line 221, ../sass/default.scss */
 .gallery dl.gallery-item { display: block; float: left; }
 
-/* line 226, ../sass/default.scss */
-.wp-caption { max-width: 96%; display: block; text-align: center !important; padding: 5px; background: #eee; }
 /* line 228, ../sass/default.scss */
+.wp-caption { max-width: 96%; display: block; text-align: center !important; padding: 5px; background: #eee; }
+/* line 230, ../sass/default.scss */
 .wp-caption p { font-size: 11px; line-height: 14px; padding: 5px 0 7px; }
-/* line 229, ../sass/default.scss */
+/* line 231, ../sass/default.scss */
 .wp-caption img { display: inline; }
 
 /* All sitemap style layouts - search, 404, sitemap */
-/* line 236, ../sass/default.scss */
+/* line 238, ../sass/default.scss */
 .layout-sitemap .display-list { margin: 0 2% 20px 0; width: 48%; float: left; }
-/* line 239, ../sass/default.scss */
-.layout-sitemap .display-list ul { margin: 10px 0 0 0; }
-/* line 240, ../sass/default.scss */
-.layout-sitemap .display-list ul ul { margin: 0 0 7px 15px; list-style: disc; }
 /* line 241, ../sass/default.scss */
-.layout-sitemap .display-list ul ul.children { padding: 0; margin-left: 15px; list-style: disc; }
+.layout-sitemap .display-list ul { margin: 10px 0 0 0; }
+/* line 242, ../sass/default.scss */
+.layout-sitemap .display-list ul ul { margin: 0 0 7px 15px; list-style: disc; }
 /* line 243, ../sass/default.scss */
+.layout-sitemap .display-list ul ul.children { padding: 0; margin-left: 15px; list-style: disc; }
+/* line 245, ../sass/default.scss */
 .layout-sitemap .display-list .site-search { display: block; padding-bottom: 10px; }
 
 /* Widget Areas
 #################################################################################################### */
-/* line 255, ../sass/default.scss */
-.sidebar ul li { margin-bottom: 10px; }
-/* line 256, ../sass/default.scss */
-.sidebar ul li li { margin: 0; }
+/* line 257, ../sass/default.scss */
+.sidebar li { margin-bottom: 10px; }
+/* line 258, ../sass/default.scss */
+.sidebar li li { margin: 0; }
 
 /* Blocks
 #################################################################################################### */
-/* line 269, ../sass/default.scss */
+/* line 271, ../sass/default.scss */
 #header .inner-wrap, #footer .inner-wrap { padding-top: 15px; padding-bottom: 15px; }
 
 /* body.landing-page
 #################################################################################################### */
-/* line 279, ../sass/default.scss */
-html { height: 100%; }
-
-/* line 280, ../sass/default.scss */
-body.landing-page { background-image: url("../images/bg-landing-page.jpg"); background-attachment: fixed; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-/* line 282, ../sass/default.scss */
+/* line 281, ../sass/default.scss */
+body.landing-page { background-image: url("../images/bg-landing-page.jpg"); background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+/* line 283, ../sass/default.scss */
 body.landing-page #page-cover { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(1, rgba(0, 0, 0, 0.3))); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); }
-/* line 297, ../sass/default.scss */
-body.landing-page #page { position: relative; z-index: 2; }
 /* line 298, ../sass/default.scss */
-body.landing-page .head { padding-top: 30px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+body.landing-page #page { position: relative; z-index: 2; }
 /* line 299, ../sass/default.scss */
+body.landing-page .head { padding-top: 30px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 300, ../sass/default.scss */
 body.landing-page .body { padding: 30px 0; }
-/* line 302, ../sass/default.scss */
+/* line 303, ../sass/default.scss */
 body.landing-page .foot { width: 100%; font-size: 16px; padding: 15px 0; text-align: center; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
-/* line 307, ../sass/default.scss */
+/* line 308, ../sass/default.scss */
 body.landing-page .form-wrap { width: 300px; margin: 0 auto; }
-/* line 309, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
 /* line 310, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 311, ../sass/default.scss */
 body.landing-page .form-wrap .gform_confirmation_message { padding: 7.5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.8); text-align: center; }
-/* line 312, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .ginput_container { padding: 7.5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(0, 0, 0, 0.4); color: #fff; }
 /* line 313, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_label { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
+body.landing-page .form-wrap .gfield .ginput_container { padding: 7.5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(0, 0, 0, 0.4); color: #fff; }
 /* line 314, ../sass/default.scss */
-body.landing-page .form-wrap .gfield input[type="email"] { font-size: 20px; text-indent: 7px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 318, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_checkbox input { margin-left: 7.5px; position: relative; top: -2px; }
+body.landing-page .form-wrap .gfield .gfield_label { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
+/* line 315, ../sass/default.scss */
+body.landing-page .form-wrap .gfield input[type="email"] { font-size: 16px; text-indent: 7px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
 /* line 319, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .gfield_checkbox input { margin-left: 7.5px; position: relative; top: -2px; }
+/* line 320, ../sass/default.scss */
 body.landing-page .form-wrap .gfield .gfield_checkbox label { cursor: pointer; padding-left: 6px; }
-/* line 322, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
 /* line 323, ../sass/default.scss */
-body.landing-page .form-wrap .gfield_error { background: none !important; }
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
 /* line 324, ../sass/default.scss */
+body.landing-page .form-wrap .gfield_error { background: none !important; }
+/* line 325, ../sass/default.scss */
 body.landing-page .form-wrap .gform_anchor, body.landing-page .form-wrap .validation_error, body.landing-page .form-wrap .validation_message, body.landing-page .form-wrap .gfield_required { display: none; }
-/* line 328, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
 /* line 329, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
+/* line 330, ../sass/default.scss */
 body.landing-page .form-wrap .gform_footer { display: block; width: 200px; padding: 3.75px 7.5px; margin-left: auto; margin-right: auto; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.4); }
-/* line 331, ../sass/default.scss */
-body.landing-page .form-wrap .gform_footer input[type="submit"] { display: block; width: 100%; text-align: center; background: #fff; font-size: 20px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 336, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
+/* line 332, ../sass/default.scss */
+body.landing-page .form-wrap .gform_footer input[type="submit"] { display: block; width: 100%; text-align: center; background: #fff; font-size: 16px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
 /* line 337, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
+/* line 338, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_1 { margin-bottom: 15px; }
-/* line 339, ../sass/default.scss */
+/* line 340, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_1 label { display: none; }
-/* line 341, ../sass/default.scss */
+/* line 342, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 { margin: 0 auto 15px !important; }
-/* line 343, ../sass/default.scss */
-body.landing-page .form-wrap #field_1_2 label:first-child { font-style: italic; font-size: 16px; }
 /* line 344, ../sass/default.scss */
+body.landing-page .form-wrap #field_1_2 label:first-child { font-style: italic; font-size: 16px; }
+/* line 345, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 .ginput_container { background: rgba(255, 255, 255, 0.8); }
 
+/* Comments */
+/* 
+File Name comments.css
+Version 1.0
+Updated 03.14.14
+Package ParentTheme
+License GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#################################################################################################### */
+/* line 9, ../sass/comments.scss */
+#comments { margin-top: 45px; /*end .commentlist*/ }
+/* line 12, ../sass/comments.scss */
+#comments .comments-title { margin: 0 0 7px; }
+/* line 13, ../sass/comments.scss */
+#comments .navigation { display: block; clear: both; text-align: left; padding: 3px 7px; }
+/* line 14, ../sass/comments.scss */
+#comments .prev-page { padding-left: 7px; }
+/* line 15, ../sass/comments.scss */
+#comments .next-page { padding-right: 7px; }
+/* line 17, ../sass/comments.scss */
+#comments .commentlist { list-style: none; margin: 0 0 1em; padding: 0; text-indent: 0; }
+/* line 19, ../sass/comments.scss */
+#comments .commentlist li { padding-bottom: 22px; margin-bottom: 10px; }
+/* line 21, ../sass/comments.scss */
+#comments .commentlist li .vcard { font-style: normal; padding: 0 0 3px; font-weight: 200; font-size: 16px; letter-spacing: 1px; }
+/* line 22, ../sass/comments.scss */
+#comments .commentlist li .avatar { float: right; margin: 0 0 1em 1em; }
+/* line 23, ../sass/comments.scss */
+#comments .commentlist li .comment-meta { padding-bottom: 2px; }
+/* line 24, ../sass/comments.scss */
+#comments .commentlist li .comment-meta a { font-size: 12px; }
+/* line 25, ../sass/comments.scss */
+#comments .commentlist li ul { list-style: square; margin: 0 0 1em 2em; }
+/* line 26, ../sass/comments.scss */
+#comments .commentlist li .reply { text-align: right; }
+/* line 27, ../sass/comments.scss */
+#comments .commentlist li .reply a { text-decoration: underline; font-style: italic; padding-left: 10px; }
+/* line 28, ../sass/comments.scss */
+#comments .commentlist li ul.children { list-style: none; margin: 10px 0 0 0; text-indent: 0; }
+/* line 30, ../sass/comments.scss */
+#comments .commentlist li ul.children li { padding-bottom: 0; }
+
+/*end #comments*/
+/* line 38, ../sass/comments.scss */
+#respond { /*end form*/ }
+/* line 39, ../sass/comments.scss */
+#respond #reply-title { margin: 0 0 7px; }
+/* line 46, ../sass/comments.scss */
+#respond form .form-block { padding-bottom: 7px; }
+/* line 47, ../sass/comments.scss */
+#respond form label { display: inline-block; width: 20%; }
+/* line 48, ../sass/comments.scss */
+#respond form .required { width: 0%; display: none; }
+/* line 49, ../sass/comments.scss */
+#respond form intput[type="text"] { display: inline-block; margin: 7px 0; width: 40% !important; }
+/* line 52, ../sass/comments.scss */
+#respond form .comment-notes, #respond form .comment-form-author, #respond form .comment-form-email, #respond form .comment-form-url, #respond form .comment-form-comment { padding-bottom: 7px; }
+/* line 58, ../sass/comments.scss */
+#respond form .comment-form-url label { display: inline-block; width: 21%; }
+/* line 60, ../sass/comments.scss */
+#respond form .button-submit { margin-top: 7px; }
+
+/*end #respond*/
 /*Responsive*/
 /* 
 File Name: responsive.css
