@@ -22,10 +22,47 @@ var childTheme = {
 	 **/
 	init : function() {
 		
+		this.hiddenNav();
 		this.gravityForms();
 		this.mbpScaleFix();
 		
 	} // end init : function
+	
+	
+	
+	/**
+	 * hiddenNav
+	 * @version 1.0
+	 * @updated 00.00.00
+	 **/
+	,hiddenNav : function() {
+		
+		var open = jQuery('#header .icon-menu');
+		var nav = jQuery('#hidden-navigation');
+		var close = jQuery('.close a',nav);
+		var speed = 200;
+		
+		nav.css({
+			right : -nav.width()
+			,display : 'block'
+		});
+		open.click(function() {
+			nav.animate({
+				right : 0 
+			}, speed);
+		});
+		nav.mouseleave(function() {
+			nav.animate({
+				right : -nav.width()
+			}, speed);
+		});
+		close.click(function() {
+			nav.animate({
+				right : -nav.width()
+			}, speed);
+		});
+		
+	} // end hiddenNav : function
 	
 	
 	

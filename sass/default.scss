@@ -9,7 +9,7 @@ License GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 /*Font: https://www.google.com/fonts#UsePlace:use/Collection:Lora|Allura|Open+Sans:400italic,700italic,400,700*/
 
 /* Padding */
-$p: 15px;
+$p: 10px;
 $radius: 4px;
 
 /* Paragraph */
@@ -94,6 +94,7 @@ a, a:visited { color:$c-red; text-decoration:none; }
 .custom-h2 { font-size:40px; font-family:$font-cusom; font-weight:400; }
 
 .h1, h1 { font-size:30px; }
+#comments h4, #comments h3,
 .h2, h2 { font-size:20px; }
 .h3, h3 { font-size:18px; }
 .h4, h4 { font-size:15px; }
@@ -197,17 +198,22 @@ input[type="submit"]:hover,input[type="button"]:hover, button:hover {
 .hentry { position:relative; }
 #loop-default {
 	padding-bottom:($p*4);
-	.hentry { padding:($p*4) 0 ($p*2) 0; }
+	.hentry { padding:($p*3) 0 ($p*2) 0; }
 	.hentry:first-child { padding:0 0 ($p*2) 0; }
 }
 
 
 
 /* Meta Data */
-.meta-data { font-style:italic; padding-bottom:$p; }
+.meta-data { 
+	font-size:18px; line-height:28px; color:$c-gray; font-family:$font-title; font-style:italic;
+	display:block; padding-bottom:15px; 
+	a { color:$c-green-light; }
+}
 
-.post-comments { padding:0 $p 0 0; }
-.post-date { padding:0 $p 0 0; }
+.post-date, .post-category, .post-comments {
+	padding:0 $p 0 0;
+}
 .read-more-dots { display:none; }
 
 
@@ -218,7 +224,7 @@ input[type="submit"]:hover,input[type="button"]:hover, button:hover {
 	.excerpt { clear:none; padding:0; }
 }
 
-a.read_more { text-decoration:underline; font-style:italic; display:block; }
+a.read_more {}
 
 .entry {
 	.aligncenter { display:block; margin:0 auto $p; }
@@ -312,10 +318,17 @@ a.read_more { text-decoration:underline; font-style:italic; display:block; }
 		display:block; font-style:normal; text-shadow:none; text-align:center;
 		background:rgba(255,255,255,0.8);
 		li { display:inline-block; }
-		a { color:$c-green-light; line-height:40px; font-size:20px; display:inline-block; padding:0 20px; margin:0; }
+		a { color:$c-green; line-height:40px; font-size:20px; display:inline-block; padding:0 20px; margin:0; @include transition($transition); }
 		.current-menu-item a, a:hover {
-			color:$c-green; background:#fff;
+			background:#fff;
 		}
+	}
+	.icon-menu { 
+		font-size:30px; color:$c-green; line-height:40px; text-shadow:none;
+		position:absolute; top:0; right:10px; cursor:pointer; @include transition($transition);
+	}
+	.icon-menu:hover {
+		color:#fff;
 	}
 }
 #footer {
@@ -327,6 +340,45 @@ a.read_more { text-decoration:underline; font-style:italic; display:block; }
 			padding:35px 0 10px;
 			li { display:inline-block; }
 			a { color:#fff; display:inline-block; padding:0 10px; margin:0; text-shadow:0 1px 2px rgba(0,0,0,0.7); }
+		}
+	}
+}
+#content-wrap {
+	.inner-wrap { padding-bottom:30px; }
+	.featured-image {}
+}
+#hidden-navigation { 
+	text-align:left; display:none;
+	position:fixed; top:0; right:0; z-index:1000;
+	height:100%; width:200px; background:rgba(255,255,255,1); @include box-shadow(0 0 6px rgba(0,0,0,0.2));
+	a { display:block; padding:2px 15px; }
+	a:hover { background:$c-gray-light; }
+	.sub-menu {
+		a { padding-left:25px; }
+	}
+	.close a { 
+		line-height:40px; font-size:12px; text-align:right; color:#000; padding-top:0; padding-bottom:0; 
+		background:$c-gray-light; margin-bottom:10px; border-bottom:solid 1px $c-gray;
+	}
+}
+
+
+
+
+
+
+/* Standard templates
+#################################################################################################### */
+body.blog,
+body.archive {
+	#loop-default {
+		.h1 {
+			padding-bottom:0; 
+			a { color:#000; }
+		}
+		.has-post-thumbnail {
+			.featured-image { display:block; width:150px; height:150px; @include background-cover(0); float:left; }
+			.post-wrap { padding-left:170px; }
 		}
 	}
 }

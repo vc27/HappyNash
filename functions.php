@@ -157,7 +157,8 @@ class ChildTheme_VC {
 		// register_nav_menus
 		register_nav_menus( array(
 			'primary-navigation' => 'Primary Navigation',
-			'footer-navigation' => 'Footer Navigation'
+			'footer-navigation' => 'Footer Navigation',
+			'hidden-navigation' => 'Hidden Navigation',
 		) );
 		
 		

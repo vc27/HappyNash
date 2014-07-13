@@ -16,7 +16,14 @@ get_template_part( 'header-head' );
 <body <?php body_class(); ?>>
 	<?php do_action('after_body_tag'); ?>
 	<div id="page">
-			
+		<?php
+		wp_nav_menu( array( 
+			'fallback_cb' => '', 
+			'theme_location' => 'hidden-navigation', 
+			'container' => 'div', 
+			'container_id' => 'hidden-navigation', 
+		) );
+		?>
 		<!-- Start Header -->
 		<div id="header" class="outer-wrap" style="background-image:url('<?php echo get_field('_header_image','option'); ?>');">
 			<?php 
@@ -26,6 +33,7 @@ get_template_part( 'header-head' );
 				'container' => 'div', 
 				'container_id' => 'primary-navigation', 
 			) );
+			echo "<span class=\"icon-menu\"></span>";
 			?>
 			<header class="inner-wrap">
 				<div class="custom-h1"><?php echo get_field('_header_title','option'); ?></div>
