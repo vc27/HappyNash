@@ -9,6 +9,12 @@
  **/
 #################################################################################################### */
 
+if ( is_page_template('tpl-home.php') ) {
+	$header_image = get_field('_home_header_image');
+} else {
+	$header_image = get_field('_header_image','option');
+}
+
 get_template_part( 'header-head' );
 
 ?>
@@ -25,7 +31,7 @@ get_template_part( 'header-head' );
 		) );
 		?>
 		<!-- Start Header -->
-		<div id="header" class="outer-wrap" style="background-image:url('<?php echo get_field('_header_image','option'); ?>');">
+		<div id="header" class="outer-wrap" style="background-image:url('<?php echo $header_image; ?>');">
 			<?php 
 			wp_nav_menu( array( 
 				'fallback_cb' => '', 
@@ -36,9 +42,16 @@ get_template_part( 'header-head' );
 			echo "<span class=\"icon-menu\"></span>";
 			?>
 			<header class="inner-wrap">
-				<div class="custom-h1"><?php echo get_field('_header_title','option'); ?></div>
+				<div class="custom-h1"><a href="<?php echo home_url(); ?>"><?php echo get_field('_header_title','option'); ?></a></div>
 				<div class="h2"><?php echo get_field('_header_sub_title','option'); ?></div>
 				<p><em><?php echo get_field('_header_sub_title_sub_text','option'); ?></em></p>
+				
+				<?php
+				if ( is_page_template('tpl-home.php') ) {
+					get_template_part('header-article-loop');
+				}
+				?>
+				
 				<div class="clear"></div>
 			</header>
 		</div>

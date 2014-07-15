@@ -761,7 +761,7 @@ a, a:visited { color: #dd5951; text-decoration: none; }
 .h6, h6 { font-size: 15px; }
 
 /* line 106, ../sass/default.scss */
-.section-head { background: rgba(0, 0, 0, 0.3); color: #fff; padding: 10px; }
+.section-head { background: rgba(0, 0, 0, 0.3); color: #fff; padding: 10px; text-align: center; }
 
 /* Forms
 #################################################################################################### */
@@ -971,59 +971,98 @@ body.blog #loop-default .has-post-thumbnail .featured-image, body.archive #loop-
 /* line 381, ../sass/default.scss */
 body.blog #loop-default .has-post-thumbnail .post-wrap, body.archive #loop-default .has-post-thumbnail .post-wrap { padding-left: 170px; }
 
+/* body.page-template-tpl-home-php
+#################################################################################################### */
+/* line 394, ../sass/default.scss */
+body.page-template-tpl-home-php #header { height: auto; margin-bottom: 5px; }
+/* line 395, ../sass/default.scss */
+body.page-template-tpl-home-php #content-wrap .inner-wrap { max-width: 10000px; padding: 0; }
+/* line 397, ../sass/default.scss */
+body.page-template-tpl-home-php #content-wrap .inner-wrap .inner-wrap { max-width: 940px; padding-left: 10px; padding-right: 10px; }
+/* line 399, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop { padding: 60px 0 80px; }
+/* line 401, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop li { padding-bottom: 7px; }
+/* line 402, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop .h2 { display: inline-block; font-family: "Open Sans", sans-serif; font-style: italic; }
+/* line 403, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop .ic { font-size: 30px; padding-right: 10px; position: relative; top: 6px; -webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; -o-transition: all 0.1s ease-in; transition: all 0.1s ease-in; }
+/* line 404, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop .icon-nourishment { color: #fef1be; }
+/* line 405, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop .icon-movement { color: #fbf5ed; }
+/* line 406, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop .icon-happiness { color: #f5cdca; }
+/* line 408, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop li:hover .icon-nourishment { color: #fbd029; }
+/* line 409, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop li:hover .icon-movement { color: #f2ddc4; }
+/* line 410, ../sass/default.scss */
+body.page-template-tpl-home-php #header-article-loop li:hover .icon-happiness { color: #dd5951; }
+/* line 413, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions { margin-bottom: 5px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+/* line 415, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions .inner-wrap { padding-top: 75px; padding-bottom: 110px; }
+/* line 416, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #gravity-form-wrap { background: rgba(255, 255, 255, 0.3); -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; padding: 10px; max-width: 470px; margin: 0 auto; }
+/* line 419, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #gravity-form-wrap .gform_wrapper { padding: 10px; position: relative; background: #fff; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; border: solid 1px #adadad; }
+/* line 422, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #gravity-form-wrap .gform_wrapper .gfield_label { display: none; }
+
 /* body.landing-page
 #################################################################################################### */
-/* line 393, ../sass/default.scss */
-body.landing-page { background-image: url("../images/bg-landing-page.jpg"); background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-/* line 395, ../sass/default.scss */
-body.landing-page #page-cover { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(1, rgba(0, 0, 0, 0.3))); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); }
-/* line 410, ../sass/default.scss */
-body.landing-page #page { position: relative; z-index: 2; }
-/* line 411, ../sass/default.scss */
-body.landing-page .head { padding-top: 20px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
-/* line 412, ../sass/default.scss */
-body.landing-page .body { padding: 20px 0; }
-/* line 415, ../sass/default.scss */
-body.landing-page .foot { width: 100%; font-size: 16px; padding: 10px 0; text-align: center; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
-/* line 420, ../sass/default.scss */
-body.landing-page .form-wrap { width: 300px; margin: 0 auto; }
-/* line 422, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
-/* line 423, ../sass/default.scss */
-body.landing-page .form-wrap .gform_confirmation_message { padding: 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.8); text-align: center; }
-/* line 425, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .ginput_container { padding: 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(0, 0, 0, 0.4); color: #fff; }
-/* line 426, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_label { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
-/* line 427, ../sass/default.scss */
-body.landing-page .form-wrap .gfield input[type="email"] { font-size: 15px; text-indent: 7px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 431, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_checkbox input { margin-left: 5px; position: relative; top: -2px; }
-/* line 432, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_checkbox label { cursor: pointer; padding-left: 6px; }
-/* line 435, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
-/* line 436, ../sass/default.scss */
-body.landing-page .form-wrap .gfield_error { background: none !important; }
 /* line 437, ../sass/default.scss */
-body.landing-page .form-wrap .gform_anchor, body.landing-page .form-wrap .validation_error, body.landing-page .form-wrap .validation_message, body.landing-page .form-wrap .gfield_required { display: none; }
-/* line 441, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
-/* line 442, ../sass/default.scss */
-body.landing-page .form-wrap .gform_footer { display: block; width: 200px; padding: 2.5px 5px; margin-left: auto; margin-right: auto; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.4); }
-/* line 444, ../sass/default.scss */
-body.landing-page .form-wrap .gform_footer input[type="submit"] { display: block; width: 100%; text-align: center; background: #fff; font-size: 15px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 449, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
-/* line 450, ../sass/default.scss */
-body.landing-page .form-wrap #field_1_1 { margin-bottom: 10px; }
-/* line 452, ../sass/default.scss */
-body.landing-page .form-wrap #field_1_1 label { display: none; }
+body.landing-page { background-image: url("../images/bg-landing-page.jpg"); background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+/* line 439, ../sass/default.scss */
+body.landing-page #page-cover { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(1, rgba(0, 0, 0, 0.3))); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); }
 /* line 454, ../sass/default.scss */
-body.landing-page .form-wrap #field_1_2 { margin: 0 auto 10px !important; }
+body.landing-page #page { position: relative; z-index: 2; }
+/* line 455, ../sass/default.scss */
+body.landing-page .head { padding-top: 20px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
 /* line 456, ../sass/default.scss */
+body.landing-page .body { padding: 20px 0; }
+/* line 459, ../sass/default.scss */
+body.landing-page .foot { width: 100%; font-size: 16px; padding: 10px 0; text-align: center; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 464, ../sass/default.scss */
+body.landing-page .form-wrap { width: 300px; margin: 0 auto; }
+/* line 466, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 467, ../sass/default.scss */
+body.landing-page .form-wrap .gform_confirmation_message { padding: 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.8); text-align: center; }
+/* line 469, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .ginput_container { padding: 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(0, 0, 0, 0.4); color: #fff; }
+/* line 470, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .gfield_label { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
+/* line 471, ../sass/default.scss */
+body.landing-page .form-wrap .gfield input[type="email"] { font-size: 15px; text-indent: 7px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
+/* line 475, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .gfield_checkbox input { margin-left: 5px; position: relative; top: -2px; }
+/* line 476, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .gfield_checkbox label { cursor: pointer; padding-left: 6px; }
+/* line 479, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
+/* line 480, ../sass/default.scss */
+body.landing-page .form-wrap .gfield_error { background: none !important; }
+/* line 481, ../sass/default.scss */
+body.landing-page .form-wrap .gform_anchor, body.landing-page .form-wrap .validation_error, body.landing-page .form-wrap .validation_message, body.landing-page .form-wrap .gfield_required { display: none; }
+/* line 485, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
+/* line 486, ../sass/default.scss */
+body.landing-page .form-wrap .gform_footer { display: block; width: 200px; padding: 2.5px 5px; margin-left: auto; margin-right: auto; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.4); }
+/* line 488, ../sass/default.scss */
+body.landing-page .form-wrap .gform_footer input[type="submit"] { display: block; width: 100%; text-align: center; background: #fff; font-size: 15px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
+/* line 493, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
+/* line 494, ../sass/default.scss */
+body.landing-page .form-wrap #field_1_1 { margin-bottom: 10px; }
+/* line 496, ../sass/default.scss */
+body.landing-page .form-wrap #field_1_1 label { display: none; }
+/* line 498, ../sass/default.scss */
+body.landing-page .form-wrap #field_1_2 { margin: 0 auto 10px !important; }
+/* line 500, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 label:first-child { font-style: italic; font-size: 16px; }
-/* line 457, ../sass/default.scss */
+/* line 501, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 .ginput_container { background: rgba(255, 255, 255, 0.8); }
 
 /* Comments */

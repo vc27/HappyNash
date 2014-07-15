@@ -104,7 +104,7 @@ a, a:visited { color:$c-red; text-decoration:none; }
 
 
 .section-head {
-	background:rgba(0,0,0,0.3); color:#fff; padding:10px;
+	background:rgba(0,0,0,0.3); color:#fff; padding:10px; text-align:center; 
 }
 
 
@@ -379,6 +379,50 @@ body.archive {
 		.has-post-thumbnail {
 			.featured-image { display:block; width:150px; height:150px; @include background-cover(0); float:left; }
 			.post-wrap { padding-left:170px; }
+		}
+	}
+}
+
+
+
+
+
+
+/* body.page-template-tpl-home-php
+#################################################################################################### */
+body.page-template-tpl-home-php {
+	#header { height:auto; margin-bottom:5px; }
+	#content-wrap .inner-wrap {
+		max-width:10000px; padding:0;
+		.inner-wrap { max-width:$max-width-a; padding-left:$p; padding-right:$p;  }
+	}
+	#header-article-loop {
+		padding:60px 0 80px; 
+		li { padding-bottom:7px; }
+		.h2 { display:inline-block; font-family:$font-paragraph; font-style:italic; }
+		.ic { font-size:30px; padding-right:10px; position:relative; top:6px; @include transition($transition); }
+		.icon-nourishment { color:$c-yellow-light; }
+		.icon-movement { color:$c-pink-light; }
+		.icon-happiness { color:$c-red-light; }
+		li:hover {
+			.icon-nourishment { color:$c-yellow; }
+			.icon-movement { color:$c-pink; }
+			.icon-happiness { color:$c-red; }
+		}
+	}
+	#section-self-submissions {
+		margin-bottom:5px; @include background-cover(0);
+		.inner-wrap { padding-top:75px; padding-bottom:110px; }
+		#gravity-form-wrap {
+			background:rgba(255,255,255,0.3); @include border-radius(7px); padding:10px;
+			max-width:470px; margin:0 auto;
+			.gform_wrapper {
+				padding:10px; position:relative;
+				background:#fff; @include border-radius(7px); border:solid 1px $c-gray;
+				.gfield_label { display:none; }
+				
+				.list-cats { }
+			}
 		}
 	}
 }
