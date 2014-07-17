@@ -44,20 +44,9 @@ class SelfSubmissionsPostType {
 	 * @updated 00.00.13
 	 **/
 	function __construct() {
-		
-		$this->register_post_type();
-		
-		// hook method after_setup_theme
-		// add_action( 'after_setup_theme', array( &$this, 'after_setup_theme' ) );
 
-		// hook method init
-		// add_action( 'init', array( &$this, 'init' ) );
-
-		// hook method admin_init
+		add_action( 'init', array( &$this, 'register_post_type' ) );
 		add_action( 'admin_init', array( &$this, 'admin_init' ) );
-		
-		// Add a metabox to this post-type
-		// add_filter( 'tester_metabox_id-included_post_types', array( &$this, 'add_external_metaboxes' ) );
 
 	} // end function __construct
 	

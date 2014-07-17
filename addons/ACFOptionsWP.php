@@ -222,6 +222,14 @@ class ACFOptionsWP {
 				'capability' => 'manage_options'
 			) );
 			
+			acf_add_options_sub_page( array(
+				'title' => 'Archive Page',
+				'menu' => 'Archive Page',
+				'slug' => 'archive-page',
+				'parent' => 'edit.php?post_type=directory',
+				'capability' => 'manage_options'
+			) );
+			
 			$GLOBALS['acf_options_page']->settings['show_parent'] = 0;
 			
 			// print_r($GLOBALS['acf_options_page']); die();

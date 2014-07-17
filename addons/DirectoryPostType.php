@@ -42,19 +42,9 @@ class DirectoryPostType {
 	 **/
 	function __construct() {
 		
-		$this->register_post_type();
-		
-		// hook method after_setup_theme
-		// add_action( 'after_setup_theme', array( &$this, 'after_setup_theme' ) );
-
-		// hook method init
-		// add_action( 'init', array( &$this, 'init' ) );
-
-		// hook method admin_init
+		add_action( 'init', array( &$this, 'register_post_type' ) );
 		add_action( 'admin_init', array( &$this, 'admin_init' ) );
-		
-		// Add a metabox to this post-type
-		// add_filter( 'tester_metabox_id-included_post_types', array( &$this, 'add_external_metaboxes' ) );
+		add_action( 'pre_get_posts', array( &$this, 'pre_get_posts' ) );
 
 	} // end function __construct
 	
@@ -204,6 +194,25 @@ class DirectoryPostType {
 	
 	
 	/**
+	 * pre_get_posts
+	 *
+	 * @version 1.0
+	 * @updated 00.00.00
+	 **/
+	function pre_get_posts( $wp_query ) {
+		
+		if ( !is_admin() AND $wp_query->is_main_query() AND isset( $wp_query->query['post_type'] ) AND $wp_query->query['post_type'] == 'directory' ) {
+			$wp_query->set( 'posts_per_page', 1 );
+		}
+		
+	} // end function pre_get_posts
+	
+	
+	
+	
+	
+	
+	/**
 	 * register_post_type
 	 *
 	 * @version 1.0
@@ -256,7 +265,7 @@ class DirectoryPostType {
 				),
 
 				// 'register_meta_box_cb' => '', --> managed via class method add_meta_boxes()
-				// 'taxonomies' => array('post_tag', 'directory-tax-hierarchal'), // array of registered taxonomies
+				'taxonomies' => array( 'category' ), // array of registered taxonomies
 				// 'permalink_epmask' => 'EP_PERMALINK',
 				'has_archive' => true, // Enables post type archives. Will use string as archive slug.
 

@@ -21,6 +21,11 @@
 		</div>
 		<footer class="inner-wrap">
 			<?php 
+			
+			if ( ! ThemeSupport::is_archive_directory() ) {
+				get_template_part('footer-directory-loop');
+			}
+			
 			wp_nav_menu( array( 
 				'depth' => 1, 
 				'fallback_cb' => '', 

@@ -28,6 +28,9 @@ $font-size-sml: 16px;
 
 /* Block */
 $max-width-a: 940px;
+$max-width-b: 768px;
+$max-width-c: 568px;
+$max-width-d: 480px;
 
 /*Colors*/
 $c-error: red;
@@ -143,6 +146,7 @@ input[type="email"]:hover,input[type="email"]:focus {}
 .gform_wrapper {
 	ul { list-style:none; margin:0; }
 	.gfield_label { font-weight:800; }
+	.gsection { padding:40px 0; margin:20px 0; border-top:solid 1px $c-gray; border-bottom:solid 1px $c-gray; }
 }
 
 
@@ -152,7 +156,7 @@ input[type="email"]:hover,input[type="email"]:focus {}
 
 /* Buttons
 #################################################################################################### */
-.btn,
+.btn, 
 input[type="submit"],input[type="button"], button {
 	cursor:pointer; display:inline-block; padding:6px 20px;
 	background:none; border:solid 1px rgba(0,0,0,0.3); @include border-radius(4px); @include transition($transition);
@@ -162,6 +166,15 @@ input[type="submit"],input[type="button"], button {
 .btn:hover,
 input[type="submit"]:hover,input[type="button"]:hover, button:hover {
 	color:#000; 
+}
+
+
+.btn-double-white {
+	padding:15px; @include border-radius(4px); background:rgba(255,255,255,0.3); border:none;
+	.btn-inner { 
+		color:$c-gray-drk; text-shadow:none;
+		padding:10px 40px; @include border-radius(4px); background:#fff;
+	}
 }
 
 
@@ -197,7 +210,6 @@ input[type="submit"]:hover,input[type="button"]:hover, button:hover {
 
 .hentry { position:relative; }
 #loop-default {
-	padding-bottom:($p*4);
 	.hentry { padding:($p*3) 0 ($p*2) 0; }
 	.hentry:first-child { padding:0 0 ($p*2) 0; }
 }
@@ -361,6 +373,17 @@ a.read_more {}
 		background:$c-gray-light; margin-bottom:10px; border-bottom:solid 1px $c-gray;
 	}
 }
+#footer-directory-loop {
+	padding:55px 0 180px; text-shadow:0 1px 2px rgba(0,0,0,0.7);
+	.h2 { font-family:$font-paragraph; font-style:italic; }
+	a { color:#fff; }
+	ul { 
+		padding:40px 0; max-width:$max-width-d; margin:0 auto; text-align:left;
+		list-style:disc; 
+		li { float:left; width:48%; margin:0 1%; }
+		a { display:block; line-height:30px; margin:1px; }
+	}
+}
 
 
 
@@ -382,6 +405,24 @@ body.archive {
 		}
 	}
 }
+
+
+
+.layout-grid {
+	.hentry {
+		width:215px; margin:0 10px 15px; display:block; float:left; @include box-shadow(0 0 1px $c-gray);
+		.featured-image { height:130px; @include background-cover(0); border-bottom:solid 1px $c-gray-light; }
+		.post-wrap { 
+			padding:20px 12px; 
+			p { padding-top:7px; line-height:22px; }
+		}
+		a { color:#000; text-decoration:underline;}
+	}
+}
+
+
+
+.block { border-bottom:solid 2px $c-gray-light; padding-bottom:($p*4); margin-bottom:75px; }
 
 
 
@@ -425,6 +466,35 @@ body.page-template-tpl-home-php {
 			}
 		}
 	}
+}
+
+
+
+
+
+
+/* body.post-type-archive-directory
+#################################################################################################### */
+body.post-type-archive-directory {
+	#loop-default {
+		.h1 { padding-bottom:$p; }
+		.block-image {
+			text-align:center; 
+			.btn { display:block; }
+			img { max-width:300px; margin:0 auto; }
+		}
+	}
+	#section-directory-submission {
+		display:none; 
+		.inside-wrapper {
+			max-width:$max-width-c; margin:0 auto;
+		}
+		.gform_wrapper {
+			li { padding-bottom:15px; }
+			.gsection { padding:40px 0; }
+		}
+	}
+	#section-directory { padding-bottom:30px; }
 }
 
 

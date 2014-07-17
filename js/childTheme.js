@@ -22,11 +22,27 @@ var childTheme = {
 	 **/
 	init : function() {
 		
+		this.showDirectorySubmission();
 		this.hiddenNav();
 		this.gravityForms();
 		this.mbpScaleFix();
 		
 	} // end init : function
+	
+	
+	
+	/**
+	 * showDirectorySubmission
+	 * @version 1.0
+	 * @updated 00.00.00
+	 **/
+	,showDirectorySubmission : function() {
+		
+		jQuery('#show-directory-submission').click(function() {
+			jQuery('#section-directory-submission').fadeToggle(300);
+		});
+		
+	} // end showDirectorySubmission : function
 	
 	
 	
@@ -56,7 +72,8 @@ var childTheme = {
 				right : -nav.width()
 			}, speed);
 		});
-		close.click(function() {
+		close.click(function(e) {
+			e.preventDefault();
 			nav.animate({
 				right : -nav.width()
 			}, speed);

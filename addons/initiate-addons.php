@@ -19,11 +19,13 @@ if ( ! defined('THEME_ADDONS_INIT') ) {
 	require_once( get_template_directory() . "/includes/initiate-lib.php" );
 	
 	// Added Functionality
+	require_once( "ThemeSupport.php" );
 	require_once( "ACFOptionsWP.php" );
 	require_once( "AdminCustomizationsWP.php" );
 	require_once( "WPSEOEdits.php" );
 	require_once( "SelfSubmissionsPostType.php" );
 	require_once( "DirectoryPostType.php" );
+	require_once( "GeoMyIPWP.php" );
 	
 	define( 'THEME_ADDONS_INIT', true );
 	
