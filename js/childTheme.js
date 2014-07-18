@@ -22,12 +22,53 @@ var childTheme = {
 	 **/
 	init : function() {
 		
+		this.homeForm();
 		this.showDirectorySubmission();
 		this.hiddenNav();
-		this.gravityForms();
 		this.mbpScaleFix();
 		
 	} // end init : function
+	
+	
+	
+	/**
+	 * homeForm
+	 * @version 1.0
+	 * @updated 00.00.00
+	 **/
+	,homeForm : function() {
+		
+		if ( jQuery('body').hasClass('page-template-tpl-home-php') ) {
+			var formBlock = jQuery('#gravity-form-wrap');
+			var postContent = jQuery('.post-content',formBlock);
+			var postContent = jQuery('.post-content',formBlock);
+			var listCats = jQuery('.list-cats',formBlock);
+			
+			
+			// post Content
+			jQuery('textarea',postContent).attr('placeholder','Tell us about your experiance');
+			jQuery('textarea',postContent).focus(function() {
+				jQuery('.charleft',postContent).fadeIn(300);
+			});
+			jQuery('textarea',postContent).blur(function() {
+				jQuery('.charleft',postContent).fadeOut(300);
+			});
+			
+			// list cats
+			jQuery('.gchoice_2_0',listCats).append('<span class="ic icon-happiness"></span>');
+			jQuery('.gchoice_2_1',listCats).append('<span class="ic icon-movement"></span>');
+			jQuery('.gchoice_2_2',listCats).append('<span class="ic icon-nourishment"></span>');
+			jQuery('.ic',listCats).click(function() {
+				var click = jQuery(this);
+				var parent = click.parent();
+				jQuery('.ic',listCats).removeClass('selected');
+				click.addClass('selected');
+				jQuery('input',parent).prop('checked',true);
+			});
+			
+		}
+		
+	} // end homeForm : function
 	
 	
 	
@@ -80,27 +121,6 @@ var childTheme = {
 		});
 		
 	} // end hiddenNav : function
-	
-	
-	
-	/**
-	 * gravityForms
-	 * @version 1.0
-	 * @updated 00.00.00
-	 **/
-	,gravityForms : function() {
-		
-		var fieldText;
-		var form = jQuery('.form-wrap');
-		jQuery('.gfield_required', form).remove();
-		var n = [1];
-		
-		for ( var i = 0; i < n.length; i++ ) { 
-			fieldText = jQuery('#field_1_'+n[i]+' label',form).text();
-			jQuery('#input_1_'+n[i],form).attr('placeholder',fieldText);
-		}
-		
-	} // end gravityForms : function
 	
 	
 	

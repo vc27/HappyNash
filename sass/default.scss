@@ -455,14 +455,61 @@ body.page-template-tpl-home-php {
 		margin-bottom:5px; @include background-cover(0);
 		.inner-wrap { padding-top:75px; padding-bottom:110px; }
 		#gravity-form-wrap {
-			background:rgba(255,255,255,0.3); @include border-radius(7px); padding:10px;
-			max-width:470px; margin:0 auto;
+			background:rgba(255,255,255,0.3); @include border-radius(7px);
+			max-width:470px; margin:0 auto 80px;
 			.gform_wrapper {
-				padding:10px; position:relative;
+				position:relative;
 				background:#fff; @include border-radius(7px); border:solid 1px $c-gray;
+				form { display:block; width:100%; }
+				.gform_body { display:block; width:100%; }
+				input[type="text"] { margin:0; background:#fff; }
+				li { overflow:visible; }
 				.gfield_label { display:none; }
 				
-				.list-cats { }
+				.post-title { display:none; }
+				.post-content {
+					width:392px; position:relative; 
+					.ginput_container { padding:10px; }
+					textarea { background:#fff; font-size:15px; line-height:25px; }
+					.charleft { display:none; position:absolute; top:-27px; left:10px; color:#000; }
+				}
+				.list-cats {
+					height:100%; width:70px; position:absolute; top:0; right:0;
+					background:$c-gray-light; @include border-radius-top-right(4px); @include border-radius-bottom-right(4px);
+					.ginput_container { padding:10px 0;}
+					li { position:relative; display:block; margin:0; padding:10px 0 !important; text-align:center; }
+					label { 
+						position:absolute; top:10px; right:-109px; padding-left:8px; text-align:left; margin:0; line-height:25px;
+						width:100px; opacity:0; cursor:default; @include transition($transition); 
+						background:$c-gray-light; 
+						@include border-radius-top-right(4px); @include border-radius-bottom-right(4px);
+					}
+					.ic { opacity:0.8; display:inline-block; line-height:25px; font-size:40px; cursor:pointer; }
+					.icon-happiness { color:$c-red; }
+					.icon-movement { color:$c-pink; }
+					.icon-nourishment { color:$c-yellow; }
+					
+					.ic.selected, .ic:hover { opacity:1; text-shadow:0 0 1px rgba(0,0,0,0.8); }
+					
+					input { display:none; position:absolute; top:0; left:0; cursor:pointer; margin:0; }
+					input[type="radio"]:checked+label { font-weight:400; }
+				}
+				.list-cats:hover {
+					label { opacity:1; }
+				}
+				.post-image {
+					width:392px;
+					.gfield_label { padding-left:10px; display:block; font-weight:400; }
+					.ginput_container { padding:0 10px 10px; }
+				}
+				.ginput_complex {
+					.ginput_full { min-height:1px; }
+				}
+				.gform_footer {
+					position:absolute; left:0; bottom:-50px; height:50px; width:100%; 
+					margin:0; padding:0;
+					input { display:block; background:#fff; font-size:15px; width:200px; margin:10px auto 0; }
+				}
 			}
 		}
 	}
