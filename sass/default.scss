@@ -438,7 +438,8 @@ body.page-template-tpl-home-php {
 		.inner-wrap { max-width:$max-width-a; padding-left:$p; padding-right:$p;  }
 	}
 	#header-article-loop {
-		padding:60px 0 80px; 
+		padding:60px 0 80px; max-width:$max-width-d; margin:0 auto;
+		ul { padding-top:10px; }
 		li { padding-bottom:7px; }
 		.h2 { display:inline-block; font-family:$font-paragraph; font-style:italic; }
 		.ic { font-size:30px; padding-right:10px; position:relative; top:6px; @include transition($transition); }
@@ -457,6 +458,10 @@ body.page-template-tpl-home-php {
 		#gravity-form-wrap {
 			background:rgba(255,255,255,0.3); @include border-radius(7px);
 			max-width:470px; margin:0 auto 80px;
+			.gform_confirmation_wrapper {
+				background:#fff; padding:10px; @include border-radius(7px);
+			}
+			.validation_error { font-size:12px; line-height:18px; margin:0; font-weight:400; color:red; position:absolute; top:-70px; left:0; background:#fff; padding:10px; @include border-radius(7px); }
 			.gform_wrapper {
 				position:relative;
 				background:#fff; @include border-radius(7px); border:solid 1px $c-gray;
@@ -466,21 +471,28 @@ body.page-template-tpl-home-php {
 				li { overflow:visible; }
 				.gfield_label { display:none; }
 				
-				.post-title { display:none; }
+				.post-title { height:0; opacity:0; }
 				.post-content {
 					width:392px; position:relative; 
 					.ginput_container { padding:10px; }
 					textarea { background:#fff; font-size:15px; line-height:25px; }
 					.charleft { display:none; position:absolute; top:-27px; left:10px; color:#000; }
 				}
+				.post-content.gfield_error {
+					margin:0 !important; padding:0 !important; border:none; 
+					.validation_message { display:none; }
+					.ginput_container { margin-top:0; @include border-radius-top-left(4px) }
+					textarea { border:none; }
+				}
 				.list-cats {
 					height:100%; width:70px; position:absolute; top:0; right:0;
 					background:$c-gray-light; @include border-radius-top-right(4px); @include border-radius-bottom-right(4px);
+					.validation_message { display:none; }
 					.ginput_container { padding:10px 0;}
 					li { position:relative; display:block; margin:0; padding:10px 0 !important; text-align:center; }
 					label { 
 						position:absolute; top:10px; right:-109px; padding-left:8px; text-align:left; margin:0; line-height:25px;
-						width:100px; opacity:0; cursor:default; @include transition($transition); 
+						width:100px; opacity:0; cursor:pointer; @include transition($transition); 
 						background:$c-gray-light; 
 						@include border-radius-top-right(4px); @include border-radius-bottom-right(4px);
 					}
@@ -489,13 +501,22 @@ body.page-template-tpl-home-php {
 					.icon-movement { color:$c-pink; }
 					.icon-nourishment { color:$c-yellow; }
 					
-					.ic.selected, .ic:hover { opacity:1; text-shadow:0 0 1px rgba(0,0,0,0.8); }
+					li.selected .ic, .ic:hover { opacity:1; text-shadow:0 0 1px rgba(0,0,0,0.8); }
+					li:hover,
+					li.selected {
+						label { opacity:1; }
+					}
 					
 					input { display:none; position:absolute; top:0; left:0; cursor:pointer; margin:0; }
 					input[type="radio"]:checked+label { font-weight:400; }
 				}
+				.list-cats.gfield_error { 
+					margin:0 !important; padding:0 !important; border:none;  
+					label { opacity:1; color:#000; background:#FFDFE0; }
+					.ginput_container { margin:0; }
+				}
 				.list-cats:hover {
-					label { opacity:1; }
+					label { opacity:0.8; }
 				}
 				.post-image {
 					width:392px;

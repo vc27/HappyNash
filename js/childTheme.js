@@ -40,9 +40,18 @@ var childTheme = {
 		
 		if ( jQuery('body').hasClass('page-template-tpl-home-php') ) {
 			var formBlock = jQuery('#gravity-form-wrap');
-			var postContent = jQuery('.post-content',formBlock);
+			var postTitle = jQuery('.post-title',formBlock);
 			var postContent = jQuery('.post-content',formBlock);
 			var listCats = jQuery('.list-cats',formBlock);
+			
+			
+			// post title hidden
+			jQuery('textarea',postContent).keyup(function() {
+				var val = jQuery(this).val();
+				if ( val.length < 100 ) {
+					jQuery('input',postTitle).val(val);
+				}
+			});
 			
 			
 			// post Content
@@ -60,11 +69,20 @@ var childTheme = {
 			jQuery('.gchoice_2_2',listCats).append('<span class="ic icon-nourishment"></span>');
 			jQuery('.ic',listCats).click(function() {
 				var click = jQuery(this);
-				var parent = click.parent();
-				jQuery('.ic',listCats).removeClass('selected');
-				click.addClass('selected');
-				jQuery('input',parent).prop('checked',true);
+				check(click);
 			});
+			jQuery('li label',listCats).click(function() {
+				var click = jQuery(this);
+				check(click);
+			});
+			
+			var check = function(click) {
+				var parent = click.parent();
+				listCats.removeClass('gfield_error');
+				jQuery('li',listCats).removeClass('selected');
+				parent.addClass('selected');
+				jQuery('input',parent).prop('checked',true);
+			};
 			
 		}
 		

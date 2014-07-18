@@ -20,7 +20,7 @@ get_template_part( 'header' );
 		<?php
 		echo "<div id=\"gravity-form-wrap\">";
 			gravity_form_enqueue_scripts( $form->id, true );
-			gravity_form( $form->id, false, false, false, '', true, 1 );
+			gravity_form( $form->id, false, false, false, '', false, 1 );
 		echo "</div>";
 		?>
 	</div>
