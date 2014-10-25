@@ -45,13 +45,6 @@ get_template_part( 'header-head' );
 				<div class="custom-h1"><a href="<?php echo home_url(); ?>"><?php echo get_field('_header_title','option'); ?></a></div>
 				<div class="h2"><?php echo get_field('_header_sub_title','option'); ?></div>
 				<p><em><?php echo get_field('_header_sub_title_sub_text','option'); ?></em></p>
-				
-				<?php
-				if ( is_page_template('tpl-home.php') ) {
-					get_template_part('header-article-loop');
-				}
-				?>
-				
 				<div class="clear"></div>
 			</header>
 		</div>

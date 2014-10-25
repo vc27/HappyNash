@@ -22,7 +22,7 @@ var childTheme = {
 	 **/
 	init : function() {
 		
-		this.homeForm();
+		// this.homeForm();
 		this.showDirectorySubmission();
 		this.hiddenNav();
 		this.mbpScaleFix();
