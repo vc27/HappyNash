@@ -323,10 +323,15 @@ a.read_more {}
 #################################################################################################### */
 
 #header {
-	height:250px; color:#fff; font-style:italic; text-shadow:0 1px 2px rgba(0,0,0,0.6);
-	@include background-cover(0); margin-bottom:75px;
+	color:#fff; font-style:italic; text-shadow:0 1px 2px rgba(0,0,0,0.6);
+	@include background-cover(0); margin-bottom:75px; padding-bottom:30px;
 	.inner-wrap { padding-top:20px; text-align:center; }
-	a { color:#fff; }
+	a { color:#fff; } 
+	.custom-h1 a {
+		display:block; margin:0 auto; 
+		width:308px; height:224px; text-indent:-9999px;
+		background:url('../images/logo.png') left top no-repeat; background-size:308px 224px; 
+	}
 	.h2 { font-family:$font-paragraph; padding:0; }
 	#primary-navigation {
 		display:block; font-style:normal; text-shadow:none; text-align:center;
@@ -459,8 +464,8 @@ body.page-template-tpl-home-php {
 	#section-about {
 		@include background-cover(0);
 		.inner-wrap { 
-			min-height:700px; max-width:$max-width-b !important;
-			padding-top:30px; padding-bottom:30px;
+			max-width:$max-width-b !important;
+			padding-top:30px; padding-bottom:100px;
 		}
 		.gradient {
 			position:absolute; top:0; left:0; width:100%; height:100%;
@@ -505,7 +510,7 @@ body.page-template-tpl-home-php {
 		margin-bottom:5px; @include background-cover(0);
 		.section-head { background:#4c4c4c; }
 		.inner-wrap { 
-			padding-top:30px; padding-bottom:110px; 
+			padding-top:60px; padding-bottom:110px; 
 			max-width:$max-width-c !important;
 			.entry { padding-bottom:15px; }
 		}

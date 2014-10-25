@@ -1,6 +1,9 @@
 ChangeLog
 ====================
 
+### 10.25.14 - 0.2.2
+- update header with logo
+
 ### 10.25.14 - 0.2.1
 - update form acf id
 

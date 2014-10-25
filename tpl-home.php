@@ -15,30 +15,30 @@ get_template_part( 'header' );
 <div id="section-about" class="outer-wrap" style="background-image:url('<?php the_field('_home_self_submissions_image'); ?>');">
 	<div class="gradient"></div>
 	<div class="inner-wrap">
-		<div class="entry section-entry"><p>Sed posuere tortor et nunc congue, nec pretium nisi congue. Sed semper bibendum urna in tempor. Donec quis tellus nulla.</p></div>
+		<div class="entry section-entry"><?php the_field('_home_about_description'); ?></div>
 		<div class="terms-wrapper">
 			<div class="block-term block-nourishment">
 				<div class="h1">Nourishment</div>
 				<span class="ic icon-nourishment"></span>
 				<div class="entry">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at interdum mauris, sit amet tincidunt turpis.</p>
-					<a class="read-more" href="#">Read More</a>
+					<?php the_field('_home_about_nourishment_description'); ?>
+					<a class="read-more" href="<?php the_field('_home_about_nourishment__url'); ?>">Read More</a>
 				</div>
 			</div>
 			<div class="block-term block-movement">
 				<div class="h1">Movement</div>
 				<span class="ic icon-movement"></span>
 				<div class="entry">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at interdum mauris, sit amet tincidunt turpis.</p>
-					<a class="read-more" href="#">Read More</a>
+					<?php the_field('_home_about_movement_description'); ?>
+					<a class="read-more" href="<?php the_field('_home_about_movement_url'); ?>">Read More</a>
 				</div>
 			</div>
 			<div class="block-term block-happiness">
 				<div class="h1">Happiness</div>
 				<span class="ic icon-happiness"></span>
 				<div class="entry">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at interdum mauris, sit amet tincidunt turpis.</p>
-					<a class="read-more" href="#">Read More</a>
+					<?php the_field('_home_about_happiness_description'); ?>
+					<a class="read-more" href="<?php the_field('_home_about_happiness_url'); ?>">Read More</a>
 				</div>
 			</div>
 		</div>
