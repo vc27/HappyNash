@@ -250,7 +250,7 @@ class SelfSubmissionsPostType {
 				// 'register_meta_box_cb' => '', --> managed via class method add_meta_boxes()
 				'taxonomies' => array( 'category' ), // array of registered taxonomies
 				// 'permalink_epmask' => 'EP_PERMALINK',
-				// 'has_archive' => true, // Enables post type archives. Will use string as archive slug.
+				'has_archive' => true, // Enables post type archives. Will use string as archive slug.
 
 				'rewrite' => array( // Permalinks
 					'slug' => 'self-submissions',

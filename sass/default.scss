@@ -410,7 +410,10 @@ body.archive {
 		}
 		.has-post-thumbnail {
 			.featured-image { display:block; width:150px; height:150px; @include background-cover(0); float:left; }
-			.post-wrap { padding-left:170px; }
+			.post-wrap { 
+				padding-left:170px; 
+				.entry { clear:none; }
+			}
 		}
 	}
 }

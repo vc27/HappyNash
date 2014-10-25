@@ -1,6 +1,9 @@
 ChangeLog
 ====================
 
+### 10.25.14 - 0.2.4
+- add self-submissions archive
+
 ### 10.25.14 - 0.2.3
 - update form on directory page
 
