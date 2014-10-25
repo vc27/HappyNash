@@ -5,7 +5,6 @@
  * @license GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  **/
 #################################################################################################### */
-$form = get_field('_directory_form','option');
 
 get_template_part( 'header' );
 
@@ -27,8 +26,8 @@ echo "</div>";
 echo "<div id=\"section-directory-submission\" class=\"block\">";
 	echo "<div class=\"inside-wrapper\">";
 		echo "<div class=\"h1\">Submit your business</div>";
-		gravity_form_enqueue_scripts( $form->id, true );
-		gravity_form( $form->id, false, false, false, '', true, 1 );
+		gravity_form_enqueue_scripts( 4, true );
+		gravity_form( 4, false, false, false, '', true, 1 );
 	echo "</div>";
 echo "</div>";
 

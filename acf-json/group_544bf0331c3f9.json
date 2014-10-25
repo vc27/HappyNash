@@ -35,18 +35,6 @@
             "tabs": "all"
         },
         {
-            "key": "field_53c67011d2926",
-            "label": "Form",
-            "name": "_directory_form",
-            "prefix": "",
-            "type": "gravity_forms_field",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "allow_null": 0,
-            "multiple": 0
-        },
-        {
             "key": "field_53c6702ed2927",
             "label": "Connect Image",
             "name": "_directory_connect_image",
