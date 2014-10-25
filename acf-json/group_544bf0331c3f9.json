@@ -1,0 +1,78 @@
+{
+    "key": "group_544bf0331c3f9",
+    "title": "Directory Archive Page",
+    "fields": [
+        {
+            "key": "field_53c66fefd2924",
+            "label": "Page Title",
+            "name": "_directory_page_title",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_53c67004d2925",
+            "label": "Content",
+            "name": "_directory_content",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 0,
+            "tabs": "all"
+        },
+        {
+            "key": "field_53c67011d2926",
+            "label": "Form",
+            "name": "_directory_form",
+            "prefix": "",
+            "type": "gravity_forms_field",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_53c6702ed2927",
+            "label": "Connect Image",
+            "name": "_directory_connect_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "preview_size": "thumbnail",
+            "library": "all",
+            "return_format": "url"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "archive-page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ""
+}
