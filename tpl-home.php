@@ -7,7 +7,7 @@
  * @license GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  **/
 #################################################################################################### */
-$form = get_field('_home_self_submissions_form');
+
 
 get_template_part( 'header' );
 
@@ -52,8 +52,8 @@ get_template_part( 'header' );
 		<div class="entry"><?php the_field('_home_self_submissions_description'); ?></div>
 		<?php
 		echo "<div id=\"gravity-form-wrap\">";
-			gravity_form_enqueue_scripts( $form->id, true );
-			gravity_form( $form->id, false, false, false, '', false, 1 );
+			gravity_form_enqueue_scripts( 3, true );
+			gravity_form( 3, false, false, false, '', false, 1 );
 		echo "</div>";
 		?>
 	</div>

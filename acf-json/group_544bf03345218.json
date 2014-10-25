@@ -49,18 +49,6 @@
             "preview_size": "thumbnail",
             "library": "all",
             "return_format": "url"
-        },
-        {
-            "key": "field_53c5228da6d90",
-            "label": "Form",
-            "name": "_home_self_submissions_form",
-            "prefix": "",
-            "type": "gravity_forms_field",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "allow_null": 0,
-            "multiple": 0
         }
     ],
     "location": [
