@@ -930,7 +930,7 @@ select, input, textarea { -webkit-appearance: none; }*/
 /* line 335, ../sass/default.scss */
 #header .h2 { font-family: "Open Sans", sans-serif; padding: 0; }
 /* line 336, ../sass/default.scss */
-#header #primary-navigation { display: block; font-style: normal; text-shadow: none; text-align: center; background: rgba(255, 255, 255, 0.8); }
+#header #primary-navigation { display: block; font-style: normal; text-shadow: none; text-align: center; background: rgba(255, 255, 255, 0.9); }
 /* line 339, ../sass/default.scss */
 #header #primary-navigation li { display: inline-block; }
 /* line 340, ../sass/default.scss */
@@ -1080,162 +1080,164 @@ body.page-template-tpl-home-php #section-self-submissions .inner-wrap { padding-
 /* line 518, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions .inner-wrap .entry { padding-bottom: 15px; }
 /* line 520, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions .btn-wrap { margin-top: 30px; padding-top: 15px; text-align: center; border-top: solid 1px #adadad; }
+/* line 521, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap { background: rgba(255, 255, 255, 0.3); -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; max-width: 470px; margin: 0 auto 80px; }
-/* line 523, ../sass/default.scss */
+/* line 524, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_confirmation_wrapper { background: #fff; padding: 10px; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; }
-/* line 526, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .validation_error { font-size: 12px; line-height: 18px; margin: 0; font-weight: 400; color: red; position: absolute; top: -70px; left: 0; background: #fff; padding: 10px; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; }
 /* line 527, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .validation_error { font-size: 12px; line-height: 18px; margin: 0; font-weight: 400; color: red; position: absolute; top: -70px; left: 0; background: #fff; padding: 10px; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; }
+/* line 528, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper { position: relative; background: #fff; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; border-radius: 7px; border: solid 1px #adadad; }
-/* line 530, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper form { display: block; width: 100%; }
 /* line 531, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .gform_body { display: block; width: 100%; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper form { display: block; width: 100%; }
 /* line 532, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper input[type="text"] { margin: 0; background: #fff; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .gform_body { display: block; width: 100%; }
 /* line 533, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper li { overflow: visible; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper input[type="text"] { margin: 0; background: #fff; }
 /* line 534, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper li { overflow: visible; }
+/* line 535, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .gfield_label { display: none; }
-/* line 536, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-title { height: 0; opacity: 0; }
 /* line 537, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-title { height: 0; opacity: 0; }
+/* line 538, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content { width: 392px; position: relative; }
-/* line 539, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content .ginput_container { padding: 10px; }
 /* line 540, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content textarea { background: #fff; font-size: 15px; line-height: 25px; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content .ginput_container { padding: 10px; }
 /* line 541, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content textarea { background: #fff; font-size: 15px; line-height: 25px; }
+/* line 542, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content .charleft { display: none; position: absolute; top: -27px; left: 10px; color: #000; }
-/* line 543, ../sass/default.scss */
+/* line 544, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content.gfield_error { margin: 0 !important; padding: 0 !important; border: none; }
-/* line 545, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content.gfield_error .validation_message { display: none; }
 /* line 546, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content.gfield_error .ginput_container { margin-top: 0; border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -o-border-top-left-radius: 4px; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content.gfield_error .validation_message { display: none; }
 /* line 547, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content.gfield_error .ginput_container { margin-top: 0; border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -o-border-top-left-radius: 4px; }
+/* line 548, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-content.gfield_error textarea { border: none; }
-/* line 549, ../sass/default.scss */
+/* line 550, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats { height: 100%; width: 70px; position: absolute; top: 0; right: 0; background: #fafafa; border-top-right-radius: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -o-border-top-right-radius: 4px; border-bottom-right-radius: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -o-border-bottom-right-radius: 4px; }
-/* line 552, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .validation_message { display: none; }
 /* line 553, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .ginput_container { padding: 10px 0; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .validation_message { display: none; }
 /* line 554, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats li { position: relative; display: block; margin: 0; padding: 10px 0 !important; text-align: center; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .ginput_container { padding: 10px 0; }
 /* line 555, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats li { position: relative; display: block; margin: 0; padding: 10px 0 !important; text-align: center; }
+/* line 556, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats label { position: absolute; top: 10px; right: -109px; padding-left: 8px; text-align: left; margin: 0; line-height: 25px; width: 100px; opacity: 0; cursor: pointer; -webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; -o-transition: all 0.1s ease-in; transition: all 0.1s ease-in; background: #fafafa; border-top-right-radius: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -o-border-top-right-radius: 4px; border-bottom-right-radius: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -o-border-bottom-right-radius: 4px; }
-/* line 561, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .ic { opacity: 0.8; display: inline-block; line-height: 25px; font-size: 40px; cursor: pointer; }
 /* line 562, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .icon-happiness { color: #dd5951; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .ic { opacity: 0.8; display: inline-block; line-height: 25px; font-size: 40px; cursor: pointer; }
 /* line 563, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .icon-movement { color: #f2ddc4; }
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .icon-happiness { color: #dd5951; }
 /* line 564, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .icon-movement { color: #f2ddc4; }
+/* line 565, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .icon-nourishment { color: #fbd029; }
-/* line 566, ../sass/default.scss */
+/* line 567, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats li.selected .ic, body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats .ic:hover { opacity: 1; text-shadow: 0 0 1px rgba(0, 0, 0, 0.8); }
-/* line 569, ../sass/default.scss */
+/* line 570, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats li:hover label, body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats li.selected label { opacity: 1; }
-/* line 572, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats input { display: none; position: absolute; top: 0; left: 0; cursor: pointer; margin: 0; }
 /* line 573, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats input { display: none; position: absolute; top: 0; left: 0; cursor: pointer; margin: 0; }
+/* line 574, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats input[type="radio"]:checked + label { font-weight: 400; }
-/* line 575, ../sass/default.scss */
+/* line 576, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats.gfield_error { margin: 0 !important; padding: 0 !important; border: none; }
-/* line 577, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats.gfield_error label { opacity: 1; color: #000; background: #FFDFE0; }
 /* line 578, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats.gfield_error label { opacity: 1; color: #000; background: #FFDFE0; }
+/* line 579, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats.gfield_error .ginput_container { margin: 0; }
-/* line 581, ../sass/default.scss */
+/* line 582, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .list-cats:hover label { opacity: 0.8; }
-/* line 583, ../sass/default.scss */
+/* line 584, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-image { width: 392px; }
-/* line 585, ../sass/default.scss */
-body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-image .gfield_label { padding-left: 10px; display: block; font-weight: 400; }
 /* line 586, ../sass/default.scss */
+body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-image .gfield_label { padding-left: 10px; display: block; font-weight: 400; }
+/* line 587, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .post-image .ginput_container { padding: 0 10px 10px; }
-/* line 589, ../sass/default.scss */
+/* line 590, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .ginput_complex .ginput_full { min-height: 1px; }
-/* line 591, ../sass/default.scss */
+/* line 592, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .gform_footer { position: absolute; left: 0; bottom: -50px; height: 50px; width: 100%; margin: 0; padding: 0; }
-/* line 594, ../sass/default.scss */
+/* line 595, ../sass/default.scss */
 body.page-template-tpl-home-php #section-self-submissions #x-gravity-form-wrap .gform_wrapper .gform_footer input { display: block; background: #fff; font-size: 15px; width: 200px; margin: 10px auto 0; }
 
 /* body.post-type-archive-directory
 #################################################################################################### */
-/* line 610, ../sass/default.scss */
-body.post-type-archive-directory #loop-default .h1 { padding-bottom: 10px; }
 /* line 611, ../sass/default.scss */
+body.post-type-archive-directory #loop-default .h1 { padding-bottom: 10px; }
+/* line 612, ../sass/default.scss */
 body.post-type-archive-directory #loop-default .block-image { text-align: center; }
-/* line 613, ../sass/default.scss */
-body.post-type-archive-directory #loop-default .block-image .btn { display: block; }
 /* line 614, ../sass/default.scss */
+body.post-type-archive-directory #loop-default .block-image .btn { display: block; }
+/* line 615, ../sass/default.scss */
 body.post-type-archive-directory #loop-default .block-image img { max-width: 300px; margin: 0 auto; }
-/* line 617, ../sass/default.scss */
+/* line 618, ../sass/default.scss */
 body.post-type-archive-directory #section-directory-submission { display: none; }
-/* line 619, ../sass/default.scss */
+/* line 620, ../sass/default.scss */
 body.post-type-archive-directory #section-directory-submission .inside-wrapper { max-width: 568px; margin: 0 auto; }
-/* line 623, ../sass/default.scss */
-body.post-type-archive-directory #section-directory-submission .gform_wrapper li { padding-bottom: 15px; }
 /* line 624, ../sass/default.scss */
+body.post-type-archive-directory #section-directory-submission .gform_wrapper li { padding-bottom: 15px; }
+/* line 625, ../sass/default.scss */
 body.post-type-archive-directory #section-directory-submission .gform_wrapper .gsection { padding: 40px 0; }
-/* line 627, ../sass/default.scss */
+/* line 628, ../sass/default.scss */
 body.post-type-archive-directory #section-directory { padding-bottom: 30px; }
 
 /* body.landing-page
 #################################################################################################### */
-/* line 637, ../sass/default.scss */
+/* line 638, ../sass/default.scss */
 body.landing-page { background-image: url("../images/bg-landing-page.jpg"); background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-/* line 639, ../sass/default.scss */
+/* line 640, ../sass/default.scss */
 body.landing-page #page-cover { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(1, rgba(0, 0, 0, 0.3))); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); }
-/* line 654, ../sass/default.scss */
-body.landing-page #page { position: relative; z-index: 2; }
 /* line 655, ../sass/default.scss */
-body.landing-page .head { padding-top: 20px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+body.landing-page #page { position: relative; z-index: 2; }
 /* line 656, ../sass/default.scss */
+body.landing-page .head { padding-top: 20px; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 657, ../sass/default.scss */
 body.landing-page .body { padding: 20px 0; }
-/* line 659, ../sass/default.scss */
+/* line 660, ../sass/default.scss */
 body.landing-page .foot { width: 100%; font-size: 16px; padding: 10px 0; text-align: center; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
-/* line 664, ../sass/default.scss */
+/* line 665, ../sass/default.scss */
 body.landing-page .form-wrap { width: 300px; margin: 0 auto; }
-/* line 666, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
 /* line 667, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper .top_label .gfield_label { text-align: center; display: block; font-weight: 400; color: #fff; text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); }
+/* line 668, ../sass/default.scss */
 body.landing-page .form-wrap .gform_confirmation_message { padding: 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.8); text-align: center; }
-/* line 669, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .ginput_container { padding: 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(0, 0, 0, 0.4); color: #fff; }
 /* line 670, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_label { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
+body.landing-page .form-wrap .gfield .ginput_container { padding: 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(0, 0, 0, 0.4); color: #fff; }
 /* line 671, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .gfield_label { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
+/* line 672, ../sass/default.scss */
 body.landing-page .form-wrap .gfield input[type="email"] { font-size: 15px; text-indent: 7px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 675, ../sass/default.scss */
-body.landing-page .form-wrap .gfield .gfield_checkbox input { margin-left: 5px; position: relative; top: -2px; }
 /* line 676, ../sass/default.scss */
+body.landing-page .form-wrap .gfield .gfield_checkbox input { margin-left: 5px; position: relative; top: -2px; }
+/* line 677, ../sass/default.scss */
 body.landing-page .form-wrap .gfield .gfield_checkbox label { cursor: pointer; padding-left: 6px; }
-/* line 679, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
 /* line 680, ../sass/default.scss */
-body.landing-page .form-wrap .gfield_error { background: none !important; }
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error.gfield_contains_required { padding-left: 0; }
 /* line 681, ../sass/default.scss */
+body.landing-page .form-wrap .gfield_error { background: none !important; }
+/* line 682, ../sass/default.scss */
 body.landing-page .form-wrap .gform_anchor, body.landing-page .form-wrap .validation_error, body.landing-page .form-wrap .validation_message, body.landing-page .form-wrap .gfield_required { display: none; }
-/* line 685, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
 /* line 686, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper li.gfield.gfield_error { border: none !important; }
+/* line 687, ../sass/default.scss */
 body.landing-page .form-wrap .gform_footer { display: block; width: 200px; padding: 2.5px 5px; margin-left: auto; margin-right: auto; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.4); }
-/* line 688, ../sass/default.scss */
+/* line 689, ../sass/default.scss */
 body.landing-page .form-wrap .gform_footer input[type="submit"] { display: block; width: 100%; text-align: center; background: #fff; font-size: 15px; border: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
-/* line 693, ../sass/default.scss */
-body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
 /* line 694, ../sass/default.scss */
+body.landing-page .form-wrap .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, body.landing-page .form-wrap .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label { font-weight: 400; }
+/* line 695, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_1 { margin-bottom: 10px; }
-/* line 696, ../sass/default.scss */
+/* line 697, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_1 label { display: none; }
-/* line 698, ../sass/default.scss */
+/* line 699, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 { margin: 0 auto 10px !important; }
-/* line 700, ../sass/default.scss */
-body.landing-page .form-wrap #field_1_2 label:first-child { font-style: italic; font-size: 16px; }
 /* line 701, ../sass/default.scss */
+body.landing-page .form-wrap #field_1_2 label:first-child { font-style: italic; font-size: 16px; }
+/* line 702, ../sass/default.scss */
 body.landing-page .form-wrap #field_1_2 .ginput_container { background: rgba(255, 255, 255, 0.8); }
 
 /* Comments */

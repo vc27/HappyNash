@@ -1,6 +1,11 @@
 ChangeLog
 ====================
 
+### 11.05.14 - 0.3.0
+- update home page with link to self submissions
+- update logo colors
+- update header nav bg color
+
 ### 10.25.14 - 0.2.4
 - add self-submissions archive
 

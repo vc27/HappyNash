@@ -44,7 +44,7 @@ class DirectoryPostType {
 		
 		add_action( 'init', array( &$this, 'register_post_type' ) );
 		add_action( 'admin_init', array( &$this, 'admin_init' ) );
-		add_action( 'pre_get_posts', array( &$this, 'pre_get_posts' ) );
+		// add_action( 'pre_get_posts', array( &$this, 'pre_get_posts' ) );
 
 	} // end function __construct
 	

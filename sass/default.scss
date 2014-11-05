@@ -335,7 +335,7 @@ a.read_more {}
 	.h2 { font-family:$font-paragraph; padding:0; }
 	#primary-navigation {
 		display:block; font-style:normal; text-shadow:none; text-align:center;
-		background:rgba(255,255,255,0.8);
+		background:rgba(255,255,255,0.9);
 		li { display:inline-block; }
 		a { color:$c-green; line-height:40px; font-size:20px; display:inline-block; padding:0 20px; margin:0; @include transition($transition); }
 		.current-menu-item a, a:hover {
@@ -517,6 +517,7 @@ body.page-template-tpl-home-php {
 			max-width:$max-width-c !important;
 			.entry { padding-bottom:15px; }
 		}
+		.btn-wrap { margin-top:30px; padding-top:15px; text-align:center; border-top:solid 1px $c-gray; }
 		#x-gravity-form-wrap {
 			background:rgba(255,255,255,0.3); @include border-radius(7px);
 			max-width:470px; margin:0 auto 80px;

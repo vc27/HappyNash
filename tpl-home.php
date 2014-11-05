@@ -56,6 +56,11 @@ get_template_part( 'header' );
 			gravity_form( 3, false, false, false, '', false, 1 );
 		echo "</div>";
 		?>
+		
+		<div class="btn-wrap">
+			<a class="btn" href="<?php echo home_url(); ?>/self-submissions">See what others have posted</a>
+		</div>
+		
 	</div>
 </div>
 <?php
