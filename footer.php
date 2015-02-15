@@ -37,6 +37,7 @@
 			<div class="social-wrap">
 				<?php if ( get_field('_twitter_url','option') ) { ?><a class="ic icon-twitter" href="<?php the_field('_twitter_url','option'); ?>" target="_blank"></a><?php } ?>
 				<?php if ( get_field('_facebook_url','option') ) { ?><a class="ic icon-facebook" href="<?php the_field('_facebook_url','option'); ?>" target="_blank"></a><?php } ?>
+				<?php if ( get_field('_instagram_url','option') ) { ?><a class="ic icon-instagram" href="<?php the_field('_instagram_url','option'); ?>" target="_blank"></a><?php } ?>
 			</div>
 			<p id="copyright">&copy; <?php echo date('Y'); ?> HappyNash</p>
 			<div class="clear"></div>

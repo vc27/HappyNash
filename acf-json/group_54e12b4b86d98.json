@@ -35,6 +35,23 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_54e12f8c058b8",
+            "label": "Instagram URL",
+            "name": "_instagram_url",
+            "prefix": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -52,5 +69,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1424042872
+    "modified": 1424043931
 }

@@ -14,6 +14,9 @@ Todo
 ChangeLog
 ====================
 
+### 02.15.15 - 0.4.1
+- add instagram to social links
+
 ### 02.15.15 - 0.4.0
 - the text fields for self submissions blend into the white background, can you make them grey (or another color) so they pop out? 
 - the Read More sections need to go to the archive pages for the categories 
