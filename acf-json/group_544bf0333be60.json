@@ -11,6 +11,11 @@
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "allow_null": 0,
             "multiple": 0
         }
@@ -44,5 +49,7 @@
         "categories",
         "tags",
         "send-trackbacks"
-    ]
+    ],
+    "local": "json",
+    "modified": 1424041711
 }

@@ -45,6 +45,10 @@ get_template_part( 'header-head' );
 				<div class="custom-h1"><a href="<?php echo home_url(); ?>"><?php echo get_field('_header_title','option'); ?></a></div>
 				<div class="h2"><?php echo get_field('_header_sub_title','option'); ?></div>
 				<p><em><?php echo get_field('_header_sub_title_sub_text','option'); ?></em></p>
+				<div class="social-wrap">
+					<?php if ( get_field('_twitter_url','option') ) { ?><a class="ic icon-twitter" href="<?php the_field('_twitter_url','option'); ?>" target="_blank"></a><?php } ?>
+					<?php if ( get_field('_facebook_url','option') ) { ?><a class="ic icon-facebook" href="<?php the_field('_facebook_url','option'); ?>" target="_blank"></a><?php } ?>
+				</div>
 				<div class="clear"></div>
 			</header>
 		</div>

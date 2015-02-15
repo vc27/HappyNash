@@ -11,6 +11,11 @@
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "preview_size": "thumbnail",
             "library": "all",
             "return_format": "url"
@@ -24,6 +29,11 @@
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -63,5 +73,7 @@
         "categories",
         "tags",
         "send-trackbacks"
-    ]
+    ],
+    "local": "json",
+    "modified": 1424041711
 }

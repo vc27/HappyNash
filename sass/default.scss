@@ -37,6 +37,7 @@ $c-error: red;
 
 /*Gray*/
 $c-gray-light: #fafafa;
+$c-gray-light-b: #e2e2e2;
 $c-gray: #adadad;
 $c-gray-drk: #a3a3a3;
 
@@ -123,8 +124,8 @@ input[type="text"],
 input[type="password"],
 input[type="email"] { 
 	font-size:$font-paragraph-size; font-family:$font-paragraph;
-	width:95%; padding:6px 2%; color:$c-gray;
-	border:none; background:$c-gray-light; @include border-radius(4px);
+	width:95%; padding:6px 2%; color:#000;
+	border:none; background:$c-gray-light-b; @include border-radius(4px);
 }
 textarea { height:100px; }
 label.error { color:$c-error; }
@@ -353,15 +354,16 @@ a.read_more {}
 #footer {
 	@include background-cover(0);
 	.inner-wrap {
-		color:#fff; text-align:center; padding-bottom:115px;
+		color:#fff; text-align:center;
 		max-width:$max-width-b;
-		#copyright { font-size:$font-size-sml; text-shadow:0 1px 2px rgba(0,0,0,0.7); }
+		#copyright { font-size:$font-size-sml; text-shadow:0 1px 2px rgba(0,0,0,0.7); padding-bottom:30px; }
 		#footer-navigation {
-			padding:35px 0 10px;
+			padding:60px 0 10px;
 			li { display:inline-block; }
 			a { color:#fff; display:inline-block; padding:0 10px; margin:0; text-shadow:0 1px 2px rgba(0,0,0,0.7); }
 		}
 	}
+	a { color:#fff; }
 }
 #content-wrap {
 	.inner-wrap { padding-bottom:30px; }

@@ -22,7 +22,7 @@ get_template_part( 'header' );
 				<span class="ic icon-nourishment"></span>
 				<div class="entry">
 					<?php the_field('_home_about_nourishment_description'); ?>
-					<a class="read-more" href="<?php the_field('_home_about_nourishment__url'); ?>">Read More</a>
+					<a class="read-more" href="<?php echo get_term_link( get_field('_home_about_nourishment__url'), 'category' ); ?>">Read More</a>
 				</div>
 			</div>
 			<div class="block-term block-movement">
@@ -30,7 +30,7 @@ get_template_part( 'header' );
 				<span class="ic icon-movement"></span>
 				<div class="entry">
 					<?php the_field('_home_about_movement_description'); ?>
-					<a class="read-more" href="<?php the_field('_home_about_movement_url'); ?>">Read More</a>
+					<a class="read-more" href="<?php echo get_term_link( get_field('_home_about_movement_url'), 'category' ); ?>">Read More</a>
 				</div>
 			</div>
 			<div class="block-term block-happiness">
@@ -38,7 +38,7 @@ get_template_part( 'header' );
 				<span class="ic icon-happiness"></span>
 				<div class="entry">
 					<?php the_field('_home_about_happiness_description'); ?>
-					<a class="read-more" href="<?php the_field('_home_about_happiness_url'); ?>">Read More</a>
+					<a class="read-more" href="<?php echo get_term_link( get_field('_home_about_happiness_url'), 'category' ); ?>">Read More</a>
 				</div>
 			</div>
 		</div>
