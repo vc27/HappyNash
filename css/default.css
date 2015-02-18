@@ -1,4 +1,4 @@
-/* 
+/*  
 File Name default.css
 Version 3.0
 Updated 03.14.14
@@ -586,7 +586,7 @@ body.blog #loop-default .has-post-thumbnail .post-wrap .entry, body.archive #loo
 
 .layout-grid .hentry { width: 215px; margin: 0 10px 15px; display: block; float: left; box-shadow: 0 0 1px #adadad; -moz-box-shadow: 0 0 1px #adadad; -webkit-box-shadow: 0 0 1px #adadad; -o-box-shadow: 0 0 1px #adadad; }
 .layout-grid .hentry .featured-image { height: 130px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; border-bottom: solid 1px #fafafa; }
-.layout-grid .hentry .post-wrap { padding: 20px 12px; }
+.layout-grid .hentry .post-wrap { padding: 20px 12px; overflow: hidden; }
 .layout-grid .hentry .post-wrap p { padding-top: 7px; line-height: 22px; }
 .layout-grid .hentry a { color: #000; text-decoration: underline; }
 
@@ -681,6 +681,7 @@ body.post-type-archive-directory #section-directory-submission .inside-wrapper {
 body.post-type-archive-directory #section-directory-submission .gform_wrapper li { padding-bottom: 15px; }
 body.post-type-archive-directory #section-directory-submission .gform_wrapper .gsection { padding: 40px 0; }
 body.post-type-archive-directory #section-directory { padding-bottom: 30px; }
+body.post-type-archive-directory .btn-wrap { margin-top: 30px; text-align: center; }
 
 /* body.landing-page
 #################################################################################################### */

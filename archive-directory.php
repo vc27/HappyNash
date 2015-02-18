@@ -16,7 +16,7 @@ echo "<div id=\"loop-default\" class=\"loop loop-page block\">";
 		echo "</div>";
 		echo "<div class=\"span4 block-image\">";
 			echo "<img src=\"" . get_field('_directory_connect_image','option') . "\" alt=\"\" />";
-			echo "<span id=\"show-directory-submission\" class=\"btn\">Submit your business</span>";
+			echo "<span class=\"btn show-directory-submission\">Submit your business</span>";
 		echo "</div>";
 	echo "</div>";
 echo "</div>";
@@ -86,6 +86,10 @@ foreach ( $terms as $term ) {
 	wp_reset_query();
 	
 } // end foreach ( $terms as $term )
+
+?>
+	<div class="btn-wrap"><span class="btn show-directory-submission">Submit your business</span></div>
+<?php
 
 
 

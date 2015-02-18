@@ -95,10 +95,24 @@ var childTheme = {
 	 * @version 1.0
 	 * @updated 00.00.00
 	 **/
+	,directoryOpen : 0
+	,setDirecotryStatus : function(n) { childTheme.directoryOpen = n; }
 	,showDirectorySubmission : function() {
 		
-		jQuery('#show-directory-submission').click(function() {
-			jQuery('#section-directory-submission').fadeToggle(300);
+		jQuery('.show-directory-submission').click(function() {
+			
+			if ( childTheme.directoryOpen == 1 ) {
+				jQuery('html,body').animate({ 
+					"scrollTop" : ( jQuery('#section-directory-submission').offset().top - 0 )
+					}, 300 );
+			} else {
+				jQuery('#section-directory-submission').fadeToggle( 100, function() {
+					childTheme.setDirecotryStatus(1);
+					jQuery('html,body').animate({ 
+						"scrollTop" : ( jQuery('#section-directory-submission').offset().top - 0 )
+						}, 300 );
+				} );
+			}
 		});
 		
 	} // end showDirectorySubmission : function

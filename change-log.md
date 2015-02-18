@@ -1,18 +1,15 @@
 Todo
 ====================
 
-### need responses
-- Business pictures too big for business directory squares - how to adjust? 
--- The business images should be pre-sized before they are uploaded to the following. 430px width 260px hight
-- Clicking on business directory picture needs to redirect to business info. Goes to 404
--- all urls must have "http://" in front of them or they will not work properly.
-- How does self submission process work?
--- The form submits as a "draft" with in the wp-admin and will need reviewed and published.
--- form email need to be updated, what email should be notified when a submission is completed
--- confirmation  need to be updated. This is the text that is displayed after the form has been submitted.
+1. Resizing pictures: could you give me a small tutorial? We can’t seem to make the sizing stick for uploads
+3. There is a blog post titled “Things that make me move” and the picture displays sideways. I’ve tried reloading and rotating it, but it doesn’t change the display on the archive page. See URL: http://happynash.com/dev/category/happiness/
 
 ChangeLog
 ====================
+
+### 02.18.15 - 0.5.0
+- update directory form button with scrollTo
+- add secondary submit to directory button
 
 ### 02.15.15 - 0.4.1
 - add instagram to social links
